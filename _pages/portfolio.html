@@ -1,0 +1,132 @@
+---
+layout: archive
+title: "Portfolio"
+permalink: /portfolio/
+author_profile: true
+---
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% include base_path %}
+
+<style>
+  /* Material Ripple effect */
+.material-ripple {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	user-select: none;
+}
+
+.material-ripple {
+  /* static positioned elements appear behind absolutely positioned siblings (.material-ink in this case)
+  so we will make the elements relatively positioned to bring them above .material-ink */
+  position: relative;
+  display: block;
+  padding-top: -100px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.red-ripple > .material-ink {
+  background-color: red;
+}
+
+/*
+.ink styles - the elements which will create the ripple effect.
+The size and position of these elements will be set by the JS code.
+Initially these elements will be scaled down to 0% and later animated to large fading circles on user click.
+*/
+.material-ink {
+	position: absolute;
+	background: #bdc3c7;
+	border-radius: 50%;
+	transform: scale(0);
+	opacity: 0.4;
+}
+
+/* animation effect */
+.material-ink.animate {
+	animation: ripple 0.6s linear;
+}
+
+@keyframes ripple {
+	100% {
+		transform: scale(2.5);
+		opacity: 0;
+	}
+}
+
+/* Material Design Card and Box Shadow by Samuel Thornton
+https://codepen.io/sdthornton/pen/wBZdXq */
+.material-card {
+	position: relative;
+  background: #fff;
+  border-color: rgb(211, 211, 211);
+  border-style: solid;
+  border-width: 1px;
+	border-radius: 5px;
+  text-align: justify;
+  padding-top: -20px;
+}
+
+.material-shadow-1 {
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
+  transition: all 0.2s ease-in-out;
+}
+
+.material-hover:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+</style>
+
+{% for post in site.portfolio %}
+<div class="material-card material-shadow-1 material-hover"> 
+  <div class="material-ripple" data-ripple-color="#3498db">
+  {% include archive-single.html %} 
+  </div>
+</div>
+<br>
+{% endfor %}
+
+
+<script>
+  // Material Ripple effect
+$(".material-ripple").click(function(event) {
+	var surface = $(this);
+
+	// create .material-ink element if doesn't exist
+	if (surface.find(".material-ink").length == 0) {
+		surface.prepend("<div class='material-ink'></div>");
+	}
+
+	var ink = surface.find(".material-ink");
+
+	// in case of quick double clicks stop the previous animation
+	ink.removeClass("animate");
+
+	// set size of .ink
+	if (!ink.height() && !ink.width()) {
+		// use surface's width or height whichever is larger for
+		// the diameter to make a circle which can cover the entire element
+		var diameter = Math.max(surface.outerWidth(), surface.outerHeight());
+		ink.css({height: diameter, width: diameter});
+	}
+
+	// get click coordinates
+	// Logic:
+	// click coordinates relative to page minus
+	// surface's position relative to page minus
+	// half of self height/width to make it controllable from the center
+	var xPos = event.pageX - surface.offset().left - (ink.width() / 2);
+	var yPos = event.pageY - surface.offset().top - (ink.height() / 2);
+
+	var rippleColor = surface.data("ripple-color");
+
+	//set the position and add class .animate
+	ink.css({
+		top: yPos + 'px',
+		left: xPos + 'px',
+		background: rippleColor
+	}).addClass("animate");
+});
+</script>

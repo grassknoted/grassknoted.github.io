@@ -1,0 +1,251 @@
+---
+title: "litFS: A lightweight File System"
+excerpt: "<div><p><img style='object-fit:scale-down; max-height: 150px; display: block; float: left; padding-right: 0.5em; padding-bottom: 0.5em;' src='/images/fs.png' width='300' height='150'></p>A FUSE file system built using the Bazil framework in Go. Apart from providing normal I/O operations on files and directories, it also achieves persistence across machine reboots by emulating a single Unix file as a disk for the file system.</div>"
+collection: portfolio
+---
+<style>
+    .double-val-label {
+	 /* display: table; */
+	 font-family: 'Roboto', sans-serif;
+	 margin: 0.4em auto;
+     display: inline-block;
+     
+}
+ .double-val-label>span {
+	 background-color: #656565;
+	 color: #ffffff;
+	 display: table-cell;
+	 font-size: 0.9em;
+	 font-weight: 400;
+	 line-height: 1;
+	 padding: .3em .6em;
+	 text-align: center;
+	 vertical-align: baseline;
+	 white-space: nowrap;
+}
+ .double-val-label>span:first-child {
+	 border-radius: 0.25em;
+}
+ .double-val-label>span:nth-child(2) {
+	 border-radius: .25em;
+}
+ .double-val-label>span.primary {
+	 background-color: #337ab7;
+}
+ .double-val-label>span.success {
+	 background-color: #5cb85c;
+}
+ .double-val-label>span.info {
+	 background-color: #5bc0de;
+}
+ .double-val-label>span.warning {
+	 background-color: #f0ad4e;
+}
+ .double-val-label>span.danger {
+	 background-color: #d9534f;
+
+ }
+ .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto
+}
+
+.mySlides {
+    display: none;
+  height: 400px;
+  border: solid 1px black;
+     
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #222428;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
+}
+
+.next {
+    right: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev {
+    left: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev:hover,
+.next:hover {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding-top: 12px;
+  padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #222428
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+.active,
+.dot:hover {
+    background-color: #717171
+}
+ 
+</style>
+<div class="double-val-label"><span class="success">Operating Systems</span></div>
+<div class="double-val-label"><span class="info">Data Storage</span></div>
+<div class="double-val-label"><span class="danger">System Design</span></div>
+<br>
+A FUSE file system built using the Bazil framework in Go. Apart from providing normal I/O operations on files and directories, it also achieves persistence across machine reboots by emulating a single Unix file as a disk for the file system.
+<br>
+<br>
+<strong>Technologies Used:</strong> Go, FUSE, Bazil.
+
+
+<br>
+<br>
+<strong>My Role:</strong> 
+<ul>
+    <li>Designed the three-stream action recognition system.</li>
+    <li>Developed the frame buffer for real-time processing.</li>
+    <li>Neural Network pruning.</li>
+</ul>
+<div style="text-align: center;"><h3>Project Gallery</h3></div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<div class="slideshow-container" style="width: 600px; height: 400px;">
+    <div class="slideshow-inner">
+      <div class="mySlides fade">
+        <img  src='/images/whats-good.jpeg' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
+        <div class="text">Overview of the System</div>
+      </div>
+      <div class="mySlides fade">
+        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
+        <div class="text">SAST</div>
+      </div>
+      <div class="mySlides fade">
+        <img  src='/images/shell.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
+        <div class="text">Shell</div>
+      </div>
+      <div class="mySlides fade">
+        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
+        <div class="text">Pelican</div>
+      </div>
+    </div>
+    <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+    <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+</div>
+<br/>
+    
+<script>
+  var slideIndex = 1;
+
+var myTimer;
+
+var slideshowContainer;
+
+window.addEventListener("load",function() {
+  showSlides(slideIndex);
+  myTimer = setInterval(function(){plusSlides(1)}, 4000);
+
+  // COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+  slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+
+  //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+  // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+
+  slideshowContainer.addEventListener('mouseenter', pause)
+  slideshowContainer.addEventListener('mouseleave', resume)
+})
+
+// NEXT AND PREVIOUS CONTROL
+function plusSlides(n){
+clearInterval(myTimer);
+if (n < 0){
+  showSlides(slideIndex -= 1);
+} else {
+ showSlides(slideIndex += 1); 
+}
+
+//   COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+if (n === -1){
+  myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+} else {
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+}
+}
+
+//Controls the current slide and resets interval if needed
+function currentSlide(n){
+clearInterval(myTimer);
+myTimer = setInterval(function(){plusSlides(n + 1)}, 1000);
+showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+
+pause = () => {
+clearInterval(myTimer);
+}
+
+resume = () =>{
+clearInterval(myTimer);
+myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+}
+</script>
+<div style='text-align: center;'>
+    <span class="dot" onclick='currentSlide(1)'></span>
+    <span class="dot" onclick='currentSlide(2)'></span>
+    <span class="dot" onclick='currentSlide(3)'></span>
+    <span class="dot" onclick='currentSlide(4)'></span>
+</div>
+
+</div>
