@@ -18,12 +18,12 @@
 
   const image = document.querySelector("img");
   if (Math.random() > 0.5) {
-    main_picture = '/images/DP.jpeg'
-    hover_picture = '/images/profile.png'
+    main_picture = './images/DP.jpeg'
+    hover_picture = './images/profile.png'
   }
   else {
-    main_picture = '/images/profile.png'
-    hover_picture = '/images/DP.jpeg'
+    main_picture = './images/profile.png'
+    hover_picture = './images/DP.jpeg'
   }
   console.log("Main Image", image)
   image.setAttribute('src', main_picture);
