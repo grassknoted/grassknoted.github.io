@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-<strong><u><mark style="background-color: yellow;">NOTE:</mark></u></strong> This is an  overview of my CV, <a href="https://www.akashnagaraj.me/files/Akash_Resume.pdf" target="_blank">here is the full CV as a PDF</a>.
+<strong><u><mark style="background-color: yellow;">NOTE:</mark></u></strong> This is an  overview of my CV, <a href="http://grassknoted.github.io/files/Akash_Resume.pdf" target="_blank">here is the full CV as a PDF</a>.
 
 Education
 ======
