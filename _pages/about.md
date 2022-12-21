@@ -6529,7 +6529,7 @@ I also work on projects that are impact-oriented and solve real-world problems. 
             <td width="25%" align="center" style="border: none;"><font size="2">Cisco Systems<br>Jan 2019 - Jan 2020</font></td>
             <td width="25%" align="center" style="border: none;"><font size="2">Goldman Sachs<br>Jan 2020 - Aug 2021</font></td>
             <td width="25%" align="center" style="border: none;"><font size="2">Brown University<br>Aug 2021 - Present</font></td>
-            <td width="25%" align="center" style="border: none;"><font size="2">MIT2<br>Sept 2022-present</font></td>
+            <td width="25%" align="center" style="border: none;"><font size="2">MIT<br>Sept 2022-present</font></td>
         </tr>
         </tbody>
     </table>
