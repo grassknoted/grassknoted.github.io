@@ -3,6 +3,7 @@ title: "Real-time Action Recognition"
 excerpt: "<div><p><img style='object-fit:scale-down; display: block; float: left; padding-right: 0.5em; padding-bottom: 0.5em; max-height: 150px;' src='/images/hand.png' width='300' height='150'></p>Action Recognition System for automated real-time hand sanitization auditing, working with real-world data from PES Institute of Medical Science and Research, primarily aimed to reduce bedside infections in hospitals, using a new approach to Action Recognition in videos.</div>"
 collection: portfolio
 ---
+
 <style>
     .double-val-label {
 	 /* display: table; */
@@ -178,76 +179,4 @@ Action Recognition System for automated real-time hand sanitization auditing, wo
     <span class="dot" onclick='currentSlide(3)'></span>
     <span class="dot" onclick='currentSlide(4)'></span>
 </div>
-
-</div>
-
-<script>
-  var slideIndex = 1;
-
-var myTimer;
-
-var slideshowContainer;
-
-window.addEventListener("load",function() {
-  showSlides(slideIndex);
-  myTimer = setInterval(function(){plusSlides(1)}, 4000);
-
-  // COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-  slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
-
-  //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-  // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
-
-  slideshowContainer.addEventListener('mouseenter', pause)
-  slideshowContainer.addEventListener('mouseleave', resume)
-})
-
-// NEXT AND PREVIOUS CONTROL
-function plusSlides(n){
-clearInterval(myTimer);
-if (n < 0){
-  showSlides(slideIndex -= 1);
-} else {
- showSlides(slideIndex += 1); 
-}
-
-//   COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-if (n === -1){
-  myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
-} else {
-  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
-}
-}
-
-//Controls the current slide and resets interval if needed
-function currentSlide(n){
-clearInterval(myTimer);
-myTimer = setInterval(function(){plusSlides(n + 1)}, 1000);
-showSlides(slideIndex = n);
-}
-
-function showSlides(n){
-var i;
-var slides = document.getElementsByClassName("mySlides");
-var dots = document.getElementsByClassName("dot");
-if (n > slides.length) {slideIndex = 1}
-if (n < 1) {slideIndex = slides.length}
-for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-}
-for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-}
-slides[slideIndex-1].style.display = "block";
-dots[slideIndex-1].className += " active";
-}
-
-pause = () => {
-clearInterval(myTimer);
-}
-
-resume = () =>{
-clearInterval(myTimer);
-myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
-}
-</script>
+<script src="/assets/js/portfolio/11real-time-action-recognition.js"></script>
