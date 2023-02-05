@@ -2,7 +2,7 @@
 title: "Diffusion Models as Artists: Are we Closing the Gap between Humans and Machines?"
 collection: publications
 permalink: /publication/diffusion-models-as-artists
-excerpt: '<em>In Review at The 40th International Conference on Machine Learning.</em>
+excerpt: '<em>Under Review at ICML 2023</em>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <br>
 <br>
