@@ -1,16 +1,15 @@
 ---
-title: "Real-time Action Recognition" 
-excerpt: "<div><p><img style='object-fit:scale-down; display: block; float: left; padding-right: 0.5em; padding-bottom: 0.5em; max-height: 150px;' src='/images/hand.png' width='300' height='150'></p>Action Recognition System for automated real-time hand sanitization auditing, working with real-world data from PES Institute of Medical Science and Research, primarily aimed to reduce bedside infections in hospitals, using a new approach to Action Recognition in videos.</div>"
+title: "Rahat: AI-based Disaster Management Platform"
+excerpt: "<div><p><img style='object-fit:scale-down; max-height: 150px;  display: block; float: left; padding-right: 0.5em; padding-bottom: 0.5em;' src='/images/rahat.png'  height='150' width='300'></p>Multilingual, end-to-end, AI-based disaster management platform using a custom protocol over GSM (no internet required). This project was my entry to Microsoft code.fun.do++, and ranked 4th amongst 6000+ entries.</div>"
 collection: portfolio
 ---
-
 <style>
     .double-val-label {
 	 /* display: table; */
 	 font-family: 'Roboto', sans-serif;
 	 margin: 0.4em auto;
      display: inline-block;
-     
+     a
 }
  .double-val-label>span {
 	 background-color: #656565;
@@ -127,27 +126,31 @@ collection: portfolio
 }
  
 </style>
-<div class="double-val-label"><span class="success">Artificial Intelligence</span></div>
+<div class="double-val-label"><span class="success">AI4SocialGood</span></div>
 <div class="double-val-label"><span class="primary">Computer Vision</span></div>
-<div class="double-val-label"><span class="info">ML4Health</span></div>
-<div class="double-val-label"><span class="warning">Realtime Systems</span></div>
+<div class="double-val-label"><span class="info">Embedded Systems</span></div>
+<div class="double-val-label"><span class="warning">Hardware</span></div>
 <br>
-Action Recognition System for automated real-time hand sanitization auditing, working with real-world data from PES Institute of Medical Science and Research, primarily aimed to reduce bedside infections in hospitals, using a new approach to Action Recognition in videos.
+Multilingual, end-to-end, AI-based disaster management platform using a custom protocol over GSM (no internet required).
+Features: Proprietary communcation protocol using a GSM module, AI-chatbot over GSM, Automated Cloud-based call-center, Smart maps with Google Maps API, Victim and Rescuer dashboard, and one-shot facial recognition for victim identification using Microsoft Azure API.
 <br>
 <br>
-<strong>Technologies Used:</strong> Python, Tensorflow, opencv.
+<strong>Technologies Used:</strong> Raspberry Pi, Embedded systems, Neural Networks, Deep Learning, Cloud Computing, Microsoft Azure.
 
 
 <br>
 <br>
 <strong>My Role:</strong> 
 <ul>
-    <li>Designed the three-stream action recognition system.</li>
-    <li>Manually recorded and created The Hand Wash Dataset.</li>
-    <li>Ran trials in hospital ICU and wards to guage doctor feedback.</li>
-    <li>Developed the frame buffer for real-time processing.</li>
-    <li>Neural Network pruning.</li>
+    <li>Designed the GSM Communication protocols.</li>
+    <li>Developed the rescuer and victim dashboards.</li>
+    <li>User feedback from Kerala flood victims.</li>
+    <li>Integration with Microsoft Azure APIs.</li>
+    <li>Integration with Google Maps APIs.</li>
 </ul>
+<h3>Rahat: AI-based Disaster Management Platform</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U3U-2pVnCOw?autoplay=1&modestbranding=1" title="Rahat: AI-based Disaster Management Platform" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <div style="text-align: center;"><h3>Project Gallery</h3></div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -175,10 +178,81 @@ Action Recognition System for automated real-time hand sanitization auditing, wo
 </div>
 <br/>
     
+<script>
+  var slideIndex = 1;
+
+var myTimer;
+
+var slideshowContainer;
+
+window.addEventListener("load",function() {
+  showSlides(slideIndex);
+  myTimer = setInterval(function(){plusSlides(1)}, 4000);
+
+  // COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+  slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+
+  //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+  // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+
+  slideshowContainer.addEventListener('mouseenter', pause)
+  slideshowContainer.addEventListener('mouseleave', resume)
+})
+
+// NEXT AND PREVIOUS CONTROL
+function plusSlides(n){
+clearInterval(myTimer);
+if (n < 0){
+  showSlides(slideIndex -= 1);
+} else {
+ showSlides(slideIndex += 1); 
+}
+
+//   COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+if (n === -1){
+  myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+} else {
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+}
+}
+
+//Controls the current slide and resets interval if needed
+function currentSlide(n){
+clearInterval(myTimer);
+myTimer = setInterval(function(){plusSlides(n + 1)}, 1000);
+showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+
+pause = () => {
+clearInterval(myTimer);
+}
+
+resume = () =>{
+clearInterval(myTimer);
+myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+}
+</script>
 <div style='text-align: center;'>
     <span class="dot" onclick='currentSlide(1)'></span>
     <span class="dot" onclick='currentSlide(2)'></span>
     <span class="dot" onclick='currentSlide(3)'></span>
     <span class="dot" onclick='currentSlide(4)'></span>
 </div>
-<script src="/assets/js/portfolio/11real-time-action-recognition.js"></script>
+
+</div>

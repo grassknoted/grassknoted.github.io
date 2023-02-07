@@ -19,7 +19,7 @@
 
 
 
-<title>Real-time Automated Answer Scoring - Akash Nagaraj</title>
+<title>Suicide Prevention from Scars - Akash Nagaraj</title>
 
 
 
@@ -29,15 +29,15 @@
 
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="Akash Nagaraj">
-<meta property="og:title" content="Real-time Automated Answer Scoring">
+<meta property="og:title" content="Suicide Prevention from Scars">
 
 
-  <link rel="canonical" href="http://localhost:4000/portfolio/12real-time-automated-answer-scoring/">
-  <meta property="og:url" content="http://localhost:4000/portfolio/12real-time-automated-answer-scoring/">
+  <link rel="canonical" href="http://localhost:4000/portfolio/02scar-detection/">
+  <meta property="og:url" content="http://localhost:4000/portfolio/02scar-detection/">
 
 
 
-  <meta property="og:description" content="A system that evaluates descriptive answers in real-time, automatically, built using word embedding models and Ensemble Learning. Used to track a student&#39;s progress and scoring trends for an answer.">
+  <meta property="og:description" content="AI-based system to process raw medical image data, to locate and characterize non-suicidal self-injury scars using recurrent feedback mechanisms and MaskRCNN.In collaboration with Harvard University and Massachusetts General Hospital.">
 
 
 
@@ -181,15 +181,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Real-time Automated Answer Scoring">
-    <meta itemprop="description" content="A system that evaluates descriptive answers in real-time, automatically, built using word embedding models and Ensemble Learning. Used to track a student&#39;s progress and scoring trends for an answer.">
+    <meta itemprop="headline" content="Suicide Prevention from Scars">
+    <meta itemprop="description" content="AI-based system to process raw medical image data, to locate and characterize non-suicidal self-injury scars using recurrent feedback mechanisms and MaskRCNN.In collaboration with Harvard University and Massachusetts General Hospital.">
     
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Real-time Automated Answer Scoring
+          <h1 class="page__title" itemprop="headline">Suicide Prevention from Scars
 </h1>
           
         
@@ -327,23 +327,24 @@
  
 </style>
 <div class="double-val-label"><span class="success">Artificial Intelligence</span></div>
-<div class="double-val-label"><span class="primary">NLP</span></div>
-<div class="double-val-label"><span class="info">ML4Education</span></div>
-<div class="double-val-label"><span class="warning">Realtime Systems</span></div>
+<div class="double-val-label"><span class="primary">Computer Vision</span></div>
+<div class="double-val-label"><span class="info">AI4SocialGood</span></div>
 <br>
-This project was presented at The 18th IEEE International Conference for Advanced Learning Technologies. A system that evaluates descriptive answers in real-time, automatically, built using word embedding models and Ensemble Learning. Used to track a student's progress and scoring trends for an answer.
+Utilize computer vision to determine the predictive utility of non-suicidal self-injuries using tissue damage and lethality as severity signals derived from clinical self-injury images in predicting prospective suicide attempt risk. 
+<em>In collaboration with Harvard University and Massachusetts General Hospital.</em>
 <br>
 <br>
-<strong>Technologies Used:</strong> Python, Tensorflow, opencv.
+<strong>Technologies Used:</strong> Detectron2, RNN, Pytorch, opencv.
 
 
 <br>
 <br>
 <strong>My Role:</strong> 
 <ul>
-    <li>Designed the three-stream action recognition system.</li>
-    <li>Developed the frame buffer for real-time processing.</li>
-    <li>Neural Network pruning.</li>
+    <li>Web-scraped 9000 images of human limbs from Google Images, Flickr, and Shutterstock. Manually verified all 9000 images.</li>
+    <li>Experimented with different pre-training techniques, and different data augmentation techniques for the best accuracy → Got the accuracy to 94% test accuracy. Feature Pyramid Networks for Detection. Faster-RCNN, MaskRCNN for segmentation. Processed and cleaned clinical data annotations (n=16000).</li>
+    <li>Analyzing the number of participants vs. accuracy graph, also working on hGRU-FPN for segmentation of scars.</li>
+    <li>Participated in over 100 hours of IRB training to gain access to REDCap and the MGH Data.</li>
 </ul>
 <div style="text-align: center;"><h3>Project Gallery</h3></div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -351,20 +352,12 @@ This project was presented at The 18th IEEE International Conference for Advance
 <div class="slideshow-container" style="width: 600px; height: 400px;">
     <div class="slideshow-inner">
       <div class="mySlides fade">
-        <img  src='/images/whats-good.jpeg' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
-        <div class="text">Overview of the System</div>
+        <img  src='/images/nssi.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
+        <div class="text">Scar Detector</div>
       </div>
       <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
-        <div class="text">SAST</div>
-      </div>
-      <div class="mySlides fade">
-        <img  src='/images/shell.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
-        <div class="text">Shell</div>
-      </div>
-      <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
-        <div class="text">Pelican</div>
+        <img  src='/images/participant_accuracy.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
+        <div class="text">No. of Participants vs. Accuracy</div>
       </div>
     </div>
     <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
@@ -372,84 +365,11 @@ This project was presented at The 18th IEEE International Conference for Advance
 </div>
 <br/>
     
-<script>
-  var slideIndex = 1;
-
-var myTimer;
-
-var slideshowContainer;
-
-window.addEventListener("load",function() {
-  showSlides(slideIndex);
-  myTimer = setInterval(function(){plusSlides(1)}, 4000);
-
-  // COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-  slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
-
-  //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-  // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
-
-  slideshowContainer.addEventListener('mouseenter', pause)
-  slideshowContainer.addEventListener('mouseleave', resume)
-})
-
-// NEXT AND PREVIOUS CONTROL
-function plusSlides(n){
-clearInterval(myTimer);
-if (n < 0){
-  showSlides(slideIndex -= 1);
-} else {
- showSlides(slideIndex += 1); 
-}
-
-//   COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-if (n === -1){
-  myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
-} else {
-  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
-}
-}
-
-//Controls the current slide and resets interval if needed
-function currentSlide(n){
-clearInterval(myTimer);
-myTimer = setInterval(function(){plusSlides(n + 1)}, 1000);
-showSlides(slideIndex = n);
-}
-
-function showSlides(n){
-var i;
-var slides = document.getElementsByClassName("mySlides");
-var dots = document.getElementsByClassName("dot");
-if (n > slides.length) {slideIndex = 1}
-if (n < 1) {slideIndex = slides.length}
-for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-}
-for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-}
-slides[slideIndex-1].style.display = "block";
-dots[slideIndex-1].className += " active";
-}
-
-pause = () => {
-clearInterval(myTimer);
-}
-
-resume = () =>{
-clearInterval(myTimer);
-myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
-}
-</script>
 <div style='text-align: center;'>
     <span class="dot" onclick='currentSlide(1)'></span>
     <span class="dot" onclick='currentSlide(2)'></span>
-    <span class="dot" onclick='currentSlide(3)'></span>
-    <span class="dot" onclick='currentSlide(4)'></span>
 </div>
-
-</div>
+<script src="/assets/js/portfolio/11real-time-action-recognition.js"></script>
         
       </section>
 
@@ -469,11 +389,11 @@ myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/portfolio/12real-time-automated-answer-scoring/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/portfolio/02scar-detection/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/portfolio/12real-time-automated-answer-scoring/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/portfolio/02scar-detection/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/portfolio/12real-time-automated-answer-scoring/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/portfolio/02scar-detection/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section> -->
 
       
@@ -481,11 +401,11 @@ myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
 
   <nav class="pagination">
     
-      <a href="http://localhost:4000/portfolio/11real-time-action-recognition/" class="pagination--pager" title="Real-time Action Recognition
+      <a href="http://localhost:4000/portfolio/01mouse-behavior/" class="pagination--pager" title="Mouse Behavior Tracking
 ">Previous</a>
     
     
-      <a href="http://localhost:4000/portfolio/133rahat-disaster-management/" class="pagination--pager" title="Rahat: AI-based Disaster Management Platform
+      <a href="http://localhost:4000/portfolio/03visual-cortex-modelling/" class="pagination--pager" title="Sensorium: Visual Cortex Modeling
 ">Next</a>
     
   </nav>

@@ -1,0 +1,199 @@
+---
+title: "Mouse Behavior Tracking" 
+excerpt: "<div><p><img style='object-fit:scale-down; display: block; float: left; padding-right: 0.5em; padding-bottom: 0.5em; max-height: 150px;' src='/images/mouse_behavior.gif' width='300' height='150'></p>An objective framework to characterize the influence of external cues, genes and neural activity on behavioral modules from videos, using Generative Modelling, Transformers & Representation Learning.<br><em>In collaboration with National Institutes of Health.</em></div>"
+collection: portfolio
+---
+
+<style>
+    .double-val-label {
+	 /* display: table; */
+	 font-family: 'Roboto', sans-serif;
+	 margin: 0.4em auto;
+     display: inline-block;
+     
+}
+ .double-val-label>span {
+	 background-color: #656565;
+	 color: #ffffff;
+	 display: table-cell;
+	 font-size: 0.9em;
+	 font-weight: 400;
+	 line-height: 1;
+	 padding: .3em .6em;
+	 text-align: center;
+	 vertical-align: baseline;
+	 white-space: nowrap;
+}
+ .double-val-label>span:first-child {
+	 border-radius: 0.25em;
+}
+ .double-val-label>span:nth-child(2) {
+	 border-radius: .25em;
+}
+ .double-val-label>span.primary {
+	 background-color: #337ab7;
+}
+ .double-val-label>span.success {
+	 background-color: #5cb85c;
+}
+ .double-val-label>span.info {
+	 background-color: #5bc0de;
+}
+ .double-val-label>span.warning {
+	 background-color: #f0ad4e;
+}
+ .double-val-label>span.danger {
+	 background-color: #d9534f;
+
+ }
+ .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto
+}
+
+.mySlides {
+    display: none;
+  height: 400px;
+  border: solid 1px black;
+     
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #222428;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
+}
+
+.next {
+    right: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev {
+    left: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev:hover,
+.next:hover {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding-top: 12px;
+  padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #222428
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+.active,
+.dot:hover {
+    background-color: #717171
+}
+ 
+</style>
+<div class="double-val-label"><span class="success">Artificial Intelligence</span></div>
+<div class="double-val-label"><span class="primary">Computer Vision</span></div>
+<div class="double-val-label"><span class="info">Vision Science</span></div>
+<div class="double-val-label"><span class="warning">Behavioral Analysis</span></div>
+<br>
+Complex naturalistic behavior is composed of sequences of stereotyped behavioral syllables, which combine to generate rich sequences of actions. We aim to extract a latent representation from unlabelled behavioral videos of specimens using two approaches. First, computer vision and pose estimation techniques are utilized to compute the pose of the specimen. We learn canonical poses and their transitions wielding stochastic processes from generative and Markov models. While this approach has been successful in extracting interpretable syllables, they don’t account for forms of behavioral variability. To address this and capitalize on the information in the enormous volume (8 billion frames) of data, I exploit large language models to generate a behavioral embedding using condensed action labels from the Inception3D AR model. Preliminary results from the combination of both approaches are promising; the system can distinguish behaviors in control and experimental specimens exposed to trauma.
+<br>
+<br>
+<strong>Technologies Used:</strong> PyTorch, Signal Processing, YOLO, VideoProcessing, opencv.
+
+
+<br>
+<br>
+<strong>My Role:</strong> 
+<ul>
+    <li>Trained a temporal LSTM classifier on action labels, experimented with different grouping intervals of predicted actions (15min, 30min, 60min) to see if we can reduce the noise.</li>
+    <li>Built an AutoEncoder for full-frame videos, and came up with the per-pixel entropy weighting loss to detect the moving mice by taking per-pixel entropy. Clustering and visualizing Latents: tSNE, U-MAP, PCA.</li>
+    <li>Explainability (gradient analysis) to explain confounds, background subtraction, and segmentation on the videos: Transformers and Optical Flow.</li>
+    <li>Annotated over 20,000 frames overall for DeepLabCut and bootstrapped DeepLabCuts Models for individual animals.</li>
+    <li>Built a tracker for the animals, using signal processing (Kalman filter and Savitzky-Golay filters) for tracking, and eliminating Jitter. Fine-tuned YOLOv5 and SSD for object detection</li>
+    <li>Trained a beta-VAE and conditional-VAE on the cropped frames. Debugged the VAE, and finally got it working on the data. Built a Recurrent Pose VAE to learn pose dynamics and transitions. Running Auto-regressive HMM models on the latents</li>
+    <li>Projected the actions into LLM space and training Language models for MaskedLanguageModelling and Sequence Classification.</li>
+</ul>
+<h3>Spine Extraction for Behavioral Analysis from Unlabelled Videos</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/900QM7AnM8g?autoplay=1&modestbranding=1" title="Timelapse of Construction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div style="text-align: center;"><h3>Project Gallery</h3></div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<div class="slideshow-container" style="width: 600px; height: 400px;">
+    <div class="slideshow-inner">
+      <div class="mySlides fade">
+        <img  src='/images/data_overview.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
+        <div class="text">Data Overview</div>
+      </div>
+      <div class="mySlides fade">
+        <img  src='/images/9classes.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
+        <div class="text">Animal Actions Disambiguated</div>
+      </div>
+      <div class="mySlides fade">
+        <img  src='/images/poseVAE.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
+        <div class="text">Variational Autoencoder for Pose</div>
+      </div>
+      <div class="mySlides fade">
+        <img  src='/images/actions0.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
+        <div class="text">Distinguishing Experimental Phases</div>
+      </div>
+      <div class="mySlides fade">
+        <img  src='/images/circadian.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
+        <div class="text">Circadian Rhythm of Mice from I3D Action Recognition</div>
+      </div>
+      <div class="mySlides fade">
+        <img  src='/images/actions1.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
+        <div class="text">Distinguishing Fine-grained Spine Positions</div>
+      </div>
+    </div>
+    <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+    <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+</div>
+<br/>
+    
+<div style='text-align: center;'>
+    <span class="dot" onclick='currentSlide(1)'></span>
+    <span class="dot" onclick='currentSlide(2)'></span>
+    <span class="dot" onclick='currentSlide(3)'></span>
+    <span class="dot" onclick='currentSlide(4)'></span>
+    <span class="dot" onclick='currentSlide(5)'></span>
+    <span class="dot" onclick='currentSlide(6)'></span>
+</div>
+<script src="/assets/js/portfolio/11real-time-action-recognition.js"></script>

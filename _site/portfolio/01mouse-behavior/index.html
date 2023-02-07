@@ -19,7 +19,7 @@
 
 
 
-<title>Real-time Automated Answer Scoring - Akash Nagaraj</title>
+<title>Mouse Behavior Tracking - Akash Nagaraj</title>
 
 
 
@@ -29,15 +29,15 @@
 
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="Akash Nagaraj">
-<meta property="og:title" content="Real-time Automated Answer Scoring">
+<meta property="og:title" content="Mouse Behavior Tracking">
 
 
-  <link rel="canonical" href="http://localhost:4000/portfolio/12real-time-automated-answer-scoring/">
-  <meta property="og:url" content="http://localhost:4000/portfolio/12real-time-automated-answer-scoring/">
+  <link rel="canonical" href="http://localhost:4000/portfolio/01mouse-behavior/">
+  <meta property="og:url" content="http://localhost:4000/portfolio/01mouse-behavior/">
 
 
 
-  <meta property="og:description" content="A system that evaluates descriptive answers in real-time, automatically, built using word embedding models and Ensemble Learning. Used to track a student&#39;s progress and scoring trends for an answer.">
+  <meta property="og:description" content="An objective framework to characterize the influence of external cues, genes and neural activity on behavioral modules from videos, using Generative Modelling, Transformers &amp; Representation Learning.In collaboration with National Institutes of Health.">
 
 
 
@@ -181,15 +181,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Real-time Automated Answer Scoring">
-    <meta itemprop="description" content="A system that evaluates descriptive answers in real-time, automatically, built using word embedding models and Ensemble Learning. Used to track a student&#39;s progress and scoring trends for an answer.">
+    <meta itemprop="headline" content="Mouse Behavior Tracking">
+    <meta itemprop="description" content="An objective framework to characterize the influence of external cues, genes and neural activity on behavioral modules from videos, using Generative Modelling, Transformers &amp; Representation Learning.In collaboration with National Institutes of Health.">
     
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Real-time Automated Answer Scoring
+          <h1 class="page__title" itemprop="headline">Mouse Behavior Tracking
 </h1>
           
         
@@ -327,44 +327,59 @@
  
 </style>
 <div class="double-val-label"><span class="success">Artificial Intelligence</span></div>
-<div class="double-val-label"><span class="primary">NLP</span></div>
-<div class="double-val-label"><span class="info">ML4Education</span></div>
-<div class="double-val-label"><span class="warning">Realtime Systems</span></div>
+<div class="double-val-label"><span class="primary">Computer Vision</span></div>
+<div class="double-val-label"><span class="info">Vision Science</span></div>
+<div class="double-val-label"><span class="warning">Behavioral Analysis</span></div>
 <br>
-This project was presented at The 18th IEEE International Conference for Advanced Learning Technologies. A system that evaluates descriptive answers in real-time, automatically, built using word embedding models and Ensemble Learning. Used to track a student's progress and scoring trends for an answer.
+Complex naturalistic behavior is composed of sequences of stereotyped behavioral syllables, which combine to generate rich sequences of actions. We aim to extract a latent representation from unlabelled behavioral videos of specimens using two approaches. First, computer vision and pose estimation techniques are utilized to compute the pose of the specimen. We learn canonical poses and their transitions wielding stochastic processes from generative and Markov models. While this approach has been successful in extracting interpretable syllables, they don’t account for forms of behavioral variability. To address this and capitalize on the information in the enormous volume (8 billion frames) of data, I exploit large language models to generate a behavioral embedding using condensed action labels from the Inception3D AR model. Preliminary results from the combination of both approaches are promising; the system can distinguish behaviors in control and experimental specimens exposed to trauma.
 <br>
 <br>
-<strong>Technologies Used:</strong> Python, Tensorflow, opencv.
+<strong>Technologies Used:</strong> PyTorch, Signal Processing, YOLO, VideoProcessing, opencv.
 
 
 <br>
 <br>
 <strong>My Role:</strong> 
 <ul>
-    <li>Designed the three-stream action recognition system.</li>
-    <li>Developed the frame buffer for real-time processing.</li>
-    <li>Neural Network pruning.</li>
+    <li>Trained a temporal LSTM classifier on action labels, experimented with different grouping intervals of predicted actions (15min, 30min, 60min) to see if we can reduce the noise.</li>
+    <li>Built an AutoEncoder for full-frame videos, and came up with the per-pixel entropy weighting loss to detect the moving mice by taking per-pixel entropy. Clustering and visualizing Latents: tSNE, U-MAP, PCA.</li>
+    <li>Explainability (gradient analysis) to explain confounds, background subtraction, and segmentation on the videos: Transformers and Optical Flow.</li>
+    <li>Annotated over 20,000 frames overall for DeepLabCut and bootstrapped DeepLabCuts Models for individual animals.</li>
+    <li>Built a tracker for the animals, using signal processing (Kalman filter and Savitzky-Golay filters) for tracking, and eliminating Jitter. Fine-tuned YOLOv5 and SSD for object detection</li>
+    <li>Trained a beta-VAE and conditional-VAE on the cropped frames. Debugged the VAE, and finally got it working on the data. Built a Recurrent Pose VAE to learn pose dynamics and transitions. Running Auto-regressive HMM models on the latents</li>
+    <li>Projected the actions into LLM space and training Language models for MaskedLanguageModelling and Sequence Classification.</li>
 </ul>
+<h3>Spine Extraction for Behavioral Analysis from Unlabelled Videos</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/900QM7AnM8g?autoplay=1&modestbranding=1" title="Timelapse of Construction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <div style="text-align: center;"><h3>Project Gallery</h3></div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <div class="slideshow-container" style="width: 600px; height: 400px;">
     <div class="slideshow-inner">
       <div class="mySlides fade">
-        <img  src='/images/whats-good.jpeg' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
-        <div class="text">Overview of the System</div>
+        <img  src='/images/data_overview.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
+        <div class="text">Data Overview</div>
       </div>
       <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
-        <div class="text">SAST</div>
+        <img  src='/images/9classes.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
+        <div class="text">Animal Actions Disambiguated</div>
       </div>
       <div class="mySlides fade">
-        <img  src='/images/shell.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
-        <div class="text">Shell</div>
+        <img  src='/images/poseVAE.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
+        <div class="text">Variational Autoencoder for Pose</div>
       </div>
       <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
-        <div class="text">Pelican</div>
+        <img  src='/images/actions0.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
+        <div class="text">Distinguishing Experimental Phases</div>
+      </div>
+      <div class="mySlides fade">
+        <img  src='/images/circadian.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
+        <div class="text">Circadian Rhythm of Mice from I3D Action Recognition</div>
+      </div>
+      <div class="mySlides fade">
+        <img  src='/images/actions1.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
+        <div class="text">Distinguishing Fine-grained Spine Positions</div>
       </div>
     </div>
     <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
@@ -372,84 +387,15 @@ This project was presented at The 18th IEEE International Conference for Advance
 </div>
 <br/>
     
-<script>
-  var slideIndex = 1;
-
-var myTimer;
-
-var slideshowContainer;
-
-window.addEventListener("load",function() {
-  showSlides(slideIndex);
-  myTimer = setInterval(function(){plusSlides(1)}, 4000);
-
-  // COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-  slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
-
-  //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-  // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
-
-  slideshowContainer.addEventListener('mouseenter', pause)
-  slideshowContainer.addEventListener('mouseleave', resume)
-})
-
-// NEXT AND PREVIOUS CONTROL
-function plusSlides(n){
-clearInterval(myTimer);
-if (n < 0){
-  showSlides(slideIndex -= 1);
-} else {
- showSlides(slideIndex += 1); 
-}
-
-//   COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-if (n === -1){
-  myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
-} else {
-  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
-}
-}
-
-//Controls the current slide and resets interval if needed
-function currentSlide(n){
-clearInterval(myTimer);
-myTimer = setInterval(function(){plusSlides(n + 1)}, 1000);
-showSlides(slideIndex = n);
-}
-
-function showSlides(n){
-var i;
-var slides = document.getElementsByClassName("mySlides");
-var dots = document.getElementsByClassName("dot");
-if (n > slides.length) {slideIndex = 1}
-if (n < 1) {slideIndex = slides.length}
-for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-}
-for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-}
-slides[slideIndex-1].style.display = "block";
-dots[slideIndex-1].className += " active";
-}
-
-pause = () => {
-clearInterval(myTimer);
-}
-
-resume = () =>{
-clearInterval(myTimer);
-myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
-}
-</script>
 <div style='text-align: center;'>
     <span class="dot" onclick='currentSlide(1)'></span>
     <span class="dot" onclick='currentSlide(2)'></span>
     <span class="dot" onclick='currentSlide(3)'></span>
     <span class="dot" onclick='currentSlide(4)'></span>
+    <span class="dot" onclick='currentSlide(5)'></span>
+    <span class="dot" onclick='currentSlide(6)'></span>
 </div>
-
-</div>
+<script src="/assets/js/portfolio/11real-time-action-recognition.js"></script>
         
       </section>
 
@@ -469,11 +415,11 @@ myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/portfolio/12real-time-automated-answer-scoring/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/portfolio/01mouse-behavior/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/portfolio/12real-time-automated-answer-scoring/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/portfolio/01mouse-behavior/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/portfolio/12real-time-automated-answer-scoring/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/portfolio/01mouse-behavior/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section> -->
 
       
@@ -481,11 +427,10 @@ myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
 
   <nav class="pagination">
     
-      <a href="http://localhost:4000/portfolio/11real-time-action-recognition/" class="pagination--pager" title="Real-time Action Recognition
-">Previous</a>
+      <a href="#" class="pagination--pager disabled">Previous</a>
     
     
-      <a href="http://localhost:4000/portfolio/133rahat-disaster-management/" class="pagination--pager" title="Rahat: AI-based Disaster Management Platform
+      <a href="http://localhost:4000/portfolio/02scar-detection/" class="pagination--pager" title="Suicide Prevention from Scars
 ">Next</a>
     
   </nav>

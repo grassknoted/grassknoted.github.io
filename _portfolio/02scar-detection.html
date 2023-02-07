@@ -1,6 +1,6 @@
 ---
-title: "Real-time Action Recognition" 
-excerpt: "<div><p><img style='object-fit:scale-down; display: block; float: left; padding-right: 0.5em; padding-bottom: 0.5em; max-height: 150px;' src='/images/hand.png' width='300' height='150'></p>Action Recognition System for automated real-time hand sanitization auditing, working with real-world data from PES Institute of Medical Science and Research, primarily aimed to reduce bedside infections in hospitals, using a new approach to Action Recognition in videos.</div>"
+title: "Suicide Prevention from Scars" 
+excerpt: "<div><p><img style='object-fit:scale-down; display: block; float: left; padding-right: 0.5em; padding-bottom: 0.5em; max-height: 150px;' src='/images/scar-detection.png' width='300' height='150'></p>AI-based system to process raw medical image data, to locate and characterize non-suicidal self-injury scars using recurrent feedback mechanisms and MaskRCNN.<br><em>In collaboration with Harvard University and Massachusetts General Hospital.</em></div>"
 collection: portfolio
 ---
 
@@ -129,24 +129,23 @@ collection: portfolio
 </style>
 <div class="double-val-label"><span class="success">Artificial Intelligence</span></div>
 <div class="double-val-label"><span class="primary">Computer Vision</span></div>
-<div class="double-val-label"><span class="info">ML4Health</span></div>
-<div class="double-val-label"><span class="warning">Realtime Systems</span></div>
+<div class="double-val-label"><span class="info">AI4SocialGood</span></div>
 <br>
-Action Recognition System for automated real-time hand sanitization auditing, working with real-world data from PES Institute of Medical Science and Research, primarily aimed to reduce bedside infections in hospitals, using a new approach to Action Recognition in videos.
+Utilize computer vision to determine the predictive utility of non-suicidal self-injuries using tissue damage and lethality as severity signals derived from clinical self-injury images in predicting prospective suicide attempt risk. 
+<em>In collaboration with Harvard University and Massachusetts General Hospital.</em>
 <br>
 <br>
-<strong>Technologies Used:</strong> Python, Tensorflow, opencv.
+<strong>Technologies Used:</strong> Detectron2, RNN, Pytorch, opencv.
 
 
 <br>
 <br>
 <strong>My Role:</strong> 
 <ul>
-    <li>Designed the three-stream action recognition system.</li>
-    <li>Manually recorded and created The Hand Wash Dataset.</li>
-    <li>Ran trials in hospital ICU and wards to guage doctor feedback.</li>
-    <li>Developed the frame buffer for real-time processing.</li>
-    <li>Neural Network pruning.</li>
+    <li>Web-scraped 9000 images of human limbs from Google Images, Flickr, and Shutterstock. Manually verified all 9000 images.</li>
+    <li>Experimented with different pre-training techniques, and different data augmentation techniques for the best accuracy → Got the accuracy to 94% test accuracy. Feature Pyramid Networks for Detection. Faster-RCNN, MaskRCNN for segmentation. Processed and cleaned clinical data annotations (n=16000).</li>
+    <li>Analyzing the number of participants vs. accuracy graph, also working on hGRU-FPN for segmentation of scars.</li>
+    <li>Participated in over 100 hours of IRB training to gain access to REDCap and the MGH Data.</li>
 </ul>
 <div style="text-align: center;"><h3>Project Gallery</h3></div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -154,20 +153,12 @@ Action Recognition System for automated real-time hand sanitization auditing, wo
 <div class="slideshow-container" style="width: 600px; height: 400px;">
     <div class="slideshow-inner">
       <div class="mySlides fade">
-        <img  src='/images/whats-good.jpeg' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
-        <div class="text">Overview of the System</div>
+        <img  src='/images/nssi.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
+        <div class="text">Scar Detector</div>
       </div>
       <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
-        <div class="text">SAST</div>
-      </div>
-      <div class="mySlides fade">
-        <img  src='/images/shell.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
-        <div class="text">Shell</div>
-      </div>
-      <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
-        <div class="text">Pelican</div>
+        <img  src='/images/participant_accuracy.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
+        <div class="text">No. of Participants vs. Accuracy</div>
       </div>
     </div>
     <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
@@ -178,7 +169,5 @@ Action Recognition System for automated real-time hand sanitization auditing, wo
 <div style='text-align: center;'>
     <span class="dot" onclick='currentSlide(1)'></span>
     <span class="dot" onclick='currentSlide(2)'></span>
-    <span class="dot" onclick='currentSlide(3)'></span>
-    <span class="dot" onclick='currentSlide(4)'></span>
 </div>
 <script src="/assets/js/portfolio/11real-time-action-recognition.js"></script>
