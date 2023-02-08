@@ -1,6 +1,6 @@
 ---
 title: "CDAE4InfoExtraction"
-excerpt: "<div><p><img style='object-fit:scale-down; max-height: 150px; display: block; float: left; padding-right: 0.5em; padding-bottom: 0.5em;' src='/images/cdea.png' width='300' height='150'></p>A system for the extraction of hierarchical information across multiple, unrelated domains that uses Capsule Networks, statistical-distribution based systems and Variational Autoencoders to extract ’characteristics’ of an image.</div>"
+excerpt: "<div><p><img style='object-fit:scale-down; max-height: 150px; display: block; float: left; padding-right: 0.5em; padding-bottom: 0.5em;' src='/images/cdea.png' width='300' height='150'></p>A characteristic extraction algorithm and the Multi-domain Image Characteristics Dataset of characteristic-tagged images to simulate the way a human brain classifies cross-domain information and generates insight. The intent was to identify prominent characteristics in data and use this identification mechanism to auto-generate insight from data in other unseen domains.</div>"
 collection: portfolio
 ---
 <style>
@@ -128,22 +128,25 @@ collection: portfolio
 </style>
 <div class="double-val-label"><span class="success">Artificial Intelligence</span></div>
 <div class="double-val-label"><span class="primary">Computer Vision</span></div>
-<div class="double-val-label"><span class="info">ML4Health</span></div>
-<div class="double-val-label"><span class="warning">Realtime Systems</span></div>
+<div class="double-val-label"><span class="warning">NLP</span></div>
+<div class="double-val-label"><span class="success">Generative Modeling</span></div>
 <br>
-A system for the extraction of hierarchical information across multiple, unrelated domains that uses Capsule Networks, statistical-distribution based systems and Variational Autoencoders to extract ’characteristics’ of an image.
+A system for the extraction of hierarchical information across multiple, unrelated domains that uses Capsule Networks, statistical-distribution based systems and Variational Autoencoders to extract ’characteristics’ of an image. a characteristic extraction algorithm and the Multi-domain Image Characteristics Dataset of characteristic-tagged images to simulate the way a human brain classifies cross-domain information and generates insight. The intent was to identify prominent characteristics in data and use this identification mechanism to auto-generate insight from data in other unseen domains.
 <br>
 <br>
-<strong>Technologies Used:</strong> Python, Tensorflow, opencv.
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<a style="text-decoration: none;" target="_blank" href="https://github.com/grassknoted/CDAE4InfoExtraction"><button type="button" class="btn btn-info" style="background-color: #6cc644; font-size: 1em;" ><i class="fa-brands fa-github"></i> GitHub</button></a>
+<a style="text-decoration: none;" target="_blank" href="https://arxiv.org/abs/2210.09053"><button type="button" class="btn btn-primary" style="background-color: #bd1f36; font-size: 1em;" ><i class="fa-solid fa-file-pdf"></i> arXiv</button></a>
+<br>
+<br>
+<strong>Technologies Used:</strong> Python, Tensorflow, Generative Modeling.
 <br>
 <br>
 <strong>My Role:</strong> 
 <ul>
-    <li>Designed the three-stream action recognition system.</li>
-    <li>Developed the frame buffer for real-time processing.</li>
-    <li>Neural Network pruning.</li>
+    <li>Experimented with Capsule Network Training algorithms.</li>
+    <li>Optimized the VAE architecture.</li>
+    <li>Web scraping to create the <a href="https://www.kaggle.com/datasets/grassknoted/multidomain-image-characteristics-dataset">Multi-domain Image Characteristics Dataset</a>.</li>
 </ul>
 <div style="text-align: center;"><h3>Project Gallery</h3></div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -151,20 +154,12 @@ A system for the extraction of hierarchical information across multiple, unrelat
 <div class="slideshow-container" style="width: 600px; height: 400px;">
     <div class="slideshow-inner">
       <div class="mySlides fade">
-        <img  src='/images/whats-good.jpeg' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
+        <img  src='/images/cdae_design.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
         <div class="text">Overview of the System</div>
       </div>
       <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
-        <div class="text">SAST</div>
-      </div>
-      <div class="mySlides fade">
-        <img  src='/images/shell.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
-        <div class="text">Shell</div>
-      </div>
-      <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
-        <div class="text">Pelican</div>
+        <img  src='/images/cdae_inference.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
+        <div class="text">Sample Inference from the System</div>
       </div>
     </div>
     <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
@@ -245,8 +240,6 @@ myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
 <div style='text-align: center;'>
     <span class="dot" onclick='currentSlide(1)'></span>
     <span class="dot" onclick='currentSlide(2)'></span>
-    <span class="dot" onclick='currentSlide(3)'></span>
-    <span class="dot" onclick='currentSlide(4)'></span>
 </div>
 
 </div>

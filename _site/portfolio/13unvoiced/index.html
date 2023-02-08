@@ -37,7 +37,7 @@
 
 
 
-  <meta property="og:description" content="A project to convert sign language signs signed by the speaker and convert what is being said into speech using Deep Learning and Image Processing. Works in real-time, and a mobile application is currently being developed for the same.">
+  <meta property="og:description" content="a real time application, using a camera for a live video feed, and in the live stream, detect alphabets signed by the sign language speaker and convert that into text and further into speech, to aid in communication with people who have trouble with spoken language due to a disability or condition.">
 
 
 
@@ -182,7 +182,7 @@
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Unvoiced: Sign-languge to Speech">
-    <meta itemprop="description" content="A project to convert sign language signs signed by the speaker and convert what is being said into speech using Deep Learning and Image Processing. Works in real-time, and a mobile application is currently being developed for the same.">
+    <meta itemprop="description" content="a real time application, using a camera for a live video feed, and in the live stream, detect alphabets signed by the sign language speaker and convert that into text and further into speech, to aid in communication with people who have trouble with spoken language due to a disability or condition.">
     
     
 
@@ -328,43 +328,47 @@
 </style>
 <div class="double-val-label"><span class="success">Artificial Intelligence</span></div>
 <div class="double-val-label"><span class="primary">Computer Vision</span></div>
-<div class="double-val-label"><span class="info">ML4Health</span></div>
+<div class="double-val-label"><span class="info">AI4SocialGood</span></div>
 <div class="double-val-label"><span class="warning">Realtime Systems</span></div>
 <br>
-A project to convert sign language signs signed by the speaker and convert what is being said into speech using Deep Learning and Image Processing. Works in real-time, and a mobile application is currently being developed for the same.
+A real-time application, using a camera for a live video feed, and in the live stream, detect alphabets signed by the sign language speaker and convert that into text and further into speech, to aid in communication with people who have trouble with spoken language due to a disability or condition.
+<br>
+<br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<a style="text-decoration: none;" target="_blank" href="https://github.com/grassknoted/Unvoiced"><button type="button" class="btn btn-info" style="background-color: #6cc644; font-size: 1em;" ><i class="fa-brands fa-github"></i> GitHub</button></a>
 <br>
 <br>
 <strong>Technologies Used:</strong> Python, Tensorflow, opencv.
-
-
 <br>
 <br>
 <strong>My Role:</strong> 
 <ul>
-    <li>Designed the three-stream action recognition system.</li>
-    <li>Developed the frame buffer for real-time processing.</li>
-    <li>Neural Network pruning.</li>
+    <li>Created the <a href="https://www.kaggle.com/datasets/grassknoted/asl-alphabet">American Sign Language Alphabet Dataset</a>, which has 75+ citations and over 38,000 downloads.</li>
+    <li>Developed a web-application and deployed the system for real-time inference.</li>
+    <li>Manually recorded multiple students to create the ASL Dataset with over 30,000 images.</li>
 </ul>
+<h3>Unvoiced: CAT from Sign Language Alphabet</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CfnFHzl4UmU?autoplay=1&modestbranding=1" title="Timelapse of Construction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h3>Unvoiced: WOW from Sign Language Alphabet</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3IVyu-cz5qk?autoplay=1&modestbranding=1" title="Timelapse of Construction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <div style="text-align: center;"><h3>Project Gallery</h3></div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <div class="slideshow-container" style="width: 600px; height: 400px;">
     <div class="slideshow-inner">
       <div class="mySlides fade">
-        <img  src='/images/whats-good.jpeg' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
-        <div class="text">Overview of the System</div>
+        <img  src='/images/unvoiced_network.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
+        <div class="text">Training of the Neural Network used for Classification</div>
       </div>
       <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
-        <div class="text">SAST</div>
+        <img  src='/images/asl_stats.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
+        <div class="text">ASL Alphabet Dataset Statistics</div>
       </div>
       <div class="mySlides fade">
-        <img  src='/images/shell.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
-        <div class="text">Shell</div>
-      </div>
-      <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
-        <div class="text">Pelican</div>
+        <img  src='/images/asl.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
+        <div class="text">ASL Alphabet Dataset</div>
       </div>
     </div>
     <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
@@ -446,7 +450,6 @@ myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
     <span class="dot" onclick='currentSlide(1)'></span>
     <span class="dot" onclick='currentSlide(2)'></span>
     <span class="dot" onclick='currentSlide(3)'></span>
-    <span class="dot" onclick='currentSlide(4)'></span>
 </div>
 
 </div>

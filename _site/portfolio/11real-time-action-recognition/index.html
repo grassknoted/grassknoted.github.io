@@ -331,42 +331,57 @@
 <div class="double-val-label"><span class="info">ML4Health</span></div>
 <div class="double-val-label"><span class="warning">Realtime Systems</span></div>
 <br>
-Action Recognition System for automated real-time hand sanitization auditing, working with real-world data from PES Institute of Medical Science and Research, primarily aimed to reduce bedside infections in hospitals, using a new approach to Action Recognition in videos.
+Used AI to address a real-world, potentially life-saving problem: minimizing Hospital Acquired Infections (HAI). HAIs are transmitted between patients due to improper hand sanitization of healthcare workers. In 2019, standard action recognition (AR) architectures struggled to differentiate between visually similar actions. Coincidentally, the actions of the hand sanitization steps are very similar in contrast to conventional AR benchmark data. As shown in~\cite{rl}, I addressed this drawback by including an object-level information stream using feature descriptors and extending the two-stream AR algorithm. Further, I optimized the system to work in real-time using network pruning and deployed it in local hospitals, leading to an 83% reduction in HAI. The project, currently patent-pending, received the Best Undergraduate Thesis award. For me, an important takeaway from this project was understanding the role of spatial, temporal, and object-level information in human and computer vision.
 <br>
 <br>
-<strong>Technologies Used:</strong> Python, Tensorflow, opencv.
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<a style="text-decoration: none;" target="_blank" href="https://github.com/grassknoted/Modified-Two-Stream-Fusion-for-Real-time-ActionRecognition"><button type="button" class="btn btn-info" style="background-color: #6cc644; font-size: 1em;" ><i class="fa-brands fa-github"></i> GitHub</button></a>
+<a style="text-decoration: none;" target="_blank" href="https://arxiv.org/abs/2210.07400"><button type="button" class="btn btn-primary" style="background-color: #bd1f36; font-size: 1em;" ><i class="fa-solid fa-file-pdf"></i> arXiv</button></a>
+<br>
+<br>
+<strong>Technologies Used:</strong> Python, Tensorflow, RaspberryPi, opencv.
 <br>
 <br>
 <strong>My Role:</strong> 
 <ul>
+    <li>Led a team of 3 undergraduate student (including me).</li>
     <li>Designed the three-stream action recognition system.</li>
-    <li>Manually recorded and created The Hand Wash Dataset.</li>
+    <li>Manually recorded and created <a href="https://www.kaggle.com/datasets/realtimear/hand-wash-dataset">The Hand Wash Dataset</a>.</li>
+    <li>Collected training data in hospital wards.</li>
     <li>Ran trials in hospital ICU and wards to guage doctor feedback.</li>
     <li>Developed the frame buffer for real-time processing.</li>
-    <li>Neural Network pruning.</li>
+    <li>Neural Network pruning to ensure real-time inference.</li>
+    <li>Built the setup entire system (hardware and case) with 3D printing for final product deployment.</li>
 </ul>
+
 <div style="text-align: center;"><h3>Project Gallery</h3></div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <div class="slideshow-container" style="width: 600px; height: 400px;">
     <div class="slideshow-inner">
       <div class="mySlides fade">
-        <img  src='/images/whats-good.jpeg' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
-        <div class="text">Overview of the System</div>
+        <img  src='/images/handwash_overview.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
+        <div class="text">System Overview</div>
       </div>
       <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
-        <div class="text">SAST</div>
+        <img  src='/images/optical_flow.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
+        <div class="text">Dense Optical Flow</div>
       </div>
       <div class="mySlides fade">
-        <img  src='/images/shell.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
-        <div class="text">Shell</div>
+        <img  src='/images/hospital_recording.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
+        <div class="text">Hospital Deployment</div>
       </div>
       <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
-        <div class="text">Pelican</div>
+        <img  src='/images/home_recording.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
+        <div class="text">Recording the Dataset</div>
+      </div>
+      <div class="mySlides fade">
+        <img  src='/images/hospital_deployment.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
+        <div class="text">Deployment of the System in the Hospital</div>
+      </div>
+      <div class="mySlides fade">
+        <img  src='/images/handwash_steps.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
+        <div class="text">Steps of WHO Recommended Handwash Procedure</div>
       </div>
     </div>
     <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
@@ -379,6 +394,8 @@ Action Recognition System for automated real-time hand sanitization auditing, wo
     <span class="dot" onclick='currentSlide(2)'></span>
     <span class="dot" onclick='currentSlide(3)'></span>
     <span class="dot" onclick='currentSlide(4)'></span>
+    <span class="dot" onclick='currentSlide(5)'></span>
+    <span class="dot" onclick='currentSlide(6)'></span>
 </div>
 <script src="/assets/js/portfolio/11real-time-action-recognition.js"></script>
         

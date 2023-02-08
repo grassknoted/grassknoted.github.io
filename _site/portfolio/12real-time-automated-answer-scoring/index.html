@@ -331,40 +331,42 @@
 <div class="double-val-label"><span class="info">ML4Education</span></div>
 <div class="double-val-label"><span class="warning">Realtime Systems</span></div>
 <br>
-This project was presented at The 18th IEEE International Conference for Advanced Learning Technologies. A system that evaluates descriptive answers in real-time, automatically, built using word embedding models and Ensemble Learning. Used to track a student's progress and scoring trends for an answer.
+A system for automated evaluation of descriptive answers, which are traditionally the domain of human assessment. I used Glove and Word2Vec word embedding models coupled with a custom DNN architecture to generate the answers' scores. This model was tested on real-world data and improved the standing accuracy from 81% to 97.2%. This project was deployed in my undergraduate university  to track a student's progress and scoring trends for an answer. This project was presented at The 18th IEEE International Conference for Advanced Learning Technologies.
 <br>
 <br>
-<strong>Technologies Used:</strong> Python, Tensorflow, opencv.
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<a style="text-decoration: none;" target="_blank" href="https://github.com/grassknoted/Realtime-Answer-Evaluation"><button type="button" class="btn btn-info" style="background-color: #6cc644; font-size: 1em;" ><i class="fa-brands fa-github"></i> GitHub</button></a>
+<a style="text-decoration: none;" target="_blank" href="https://arxiv.org/abs/2210.09004"><button type="button" class="btn btn-primary" style="background-color: #bd1f36; font-size: 1em;" ><i class="fa-solid fa-file-pdf"></i> arXiv</button></a>
+<br>
+<br>
+<strong>Technologies Used:</strong> Python, Tensorflow, Flask Web Server, NLTK.
 <br>
 <br>
 <strong>My Role:</strong> 
 <ul>
-    <li>Designed the three-stream action recognition system.</li>
-    <li>Developed the frame buffer for real-time processing.</li>
-    <li>Neural Network pruning.</li>
+    <li>Designed the custom DNN architectures, with neural network optimization and hyperparameter search.</li>
+    <li>Built the web application to be a real-time system that captures ”snapshots” of the student's progress that was deployed in my university.</li>
+    <li>Incorporate feedback from the university's examination department to improve the real-time system.</li>
 </ul>
+<h3>Real-time Automated Answer Scoring</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jbRdNlOVU04?autoplay=1&modestbranding=1" title="Timelapse of Construction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <div style="text-align: center;"><h3>Project Gallery</h3></div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <div class="slideshow-container" style="width: 600px; height: 400px;">
     <div class="slideshow-inner">
       <div class="mySlides fade">
-        <img  src='/images/whats-good.jpeg' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
-        <div class="text">Overview of the System</div>
+        <img  src='/images/rtas.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
+        <div class="text">Real-time Processing of Descriptive Answers</div>
       </div>
       <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
-        <div class="text">SAST</div>
+        <img  src='/images/embedding_dimension.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
+        <div class="text">Comparison of word embeddings and models</div>
       </div>
       <div class="mySlides fade">
-        <img  src='/images/shell.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
-        <div class="text">Shell</div>
-      </div>
-      <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
-        <div class="text">Pelican</div>
+        <img  src='/images/rtas_errors.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
+        <div class="text">Errors across 20,000 descriptive answers</div>
       </div>
     </div>
     <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
@@ -446,7 +448,6 @@ myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
     <span class="dot" onclick='currentSlide(1)'></span>
     <span class="dot" onclick='currentSlide(2)'></span>
     <span class="dot" onclick='currentSlide(3)'></span>
-    <span class="dot" onclick='currentSlide(4)'></span>
 </div>
 
 </div>

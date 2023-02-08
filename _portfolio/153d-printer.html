@@ -9,7 +9,7 @@ collection: portfolio
 	 font-family: 'Roboto', sans-serif;
 	 margin: 0.4em auto;
      display: inline-block;
-     
+     a
 }
  .double-val-label>span {
 	 background-color: #656565;
@@ -131,19 +131,18 @@ collection: portfolio
 <div class="double-val-label"><span class="info">Embedded Systems</span></div>
 <div class="double-val-label"><span class="warning">Hardware</span></div>
 <br>
-A 3D printer built from scratch which takes a 2D image as input and prints out the image in 3 Dimensions, using a combination of Photogrammetry and Computational Imaging.
+Designed and built a 3D printer completely from scratch, complete with the Operating System built over Ramps. The printer takes a 2D image as input and prints out the image in 3-Dimensions, using a combination of Photogrammetry and Computational Imaging.
 <br>
 <br>
-<strong>Technologies Used:</strong> Ramps 1.4, Raspberry Pi, Cura, Slic3r.
-
-
+<strong>Technologies Used:</strong> Hardware, Design, Ramps 1.4, Raspberry Pi, Cura, Slic3r.
 <br>
 <br>
 <strong>My Role:</strong> 
 <ul>
-    <li>Designed the three-stream action recognition system.</li>
-    <li>Developed the frame buffer for real-time processing.</li>
-    <li>Neural Network pruning.</li>
+    <li>Designed the parts for the 3D printer.</li>
+    <li>Built the operation system for the printer over Ramps 1.4.</li>
+    <li>Optimized all parts for a 800cc build volume.</li>
+    <li>Create a pipeline involving Slic3r and Cura to create 3D templates from 2D images.</li>
 </ul>
 <h3>Timelapse of the Construction</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TyrThSRvaZc?autoplay=1&modestbranding=1" title="Timelapse of Construction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -154,20 +153,16 @@ A 3D printer built from scratch which takes a 2D image as input and prints out t
 <div class="slideshow-container" style="width: 600px; height: 400px;">
     <div class="slideshow-inner">
       <div class="mySlides fade">
-        <img  src='/images/whats-good.jpeg' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
-        <div class="text">Overview of the System</div>
+        <img  src='/images/3d_complete.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
+        <div class="text">Complete Printer during printing</div>
       </div>
       <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
-        <div class="text">SAST</div>
+        <img  src='/images/3dprinter.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
+        <div class="text">The 3D printer</div>
       </div>
       <div class="mySlides fade">
-        <img  src='/images/shell.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
-        <div class="text">Shell</div>
-      </div>
-      <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
-        <div class="text">Pelican</div>
+        <img  src='/images/3d_hardware.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
+        <div class="text">3D Printer Hardware only</div>
       </div>
     </div>
     <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
@@ -249,7 +244,6 @@ myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
     <span class="dot" onclick='currentSlide(1)'></span>
     <span class="dot" onclick='currentSlide(2)'></span>
     <span class="dot" onclick='currentSlide(3)'></span>
-    <span class="dot" onclick='currentSlide(4)'></span>
 </div>
 
 </div>

@@ -1,6 +1,6 @@
 ---
 title: "Digital Image Forensics"
-excerpt: "<div><p><img style='object-fit:scale-down; max-height: 150px; display: block; float: left; padding-right: 0.5em; padding-bottom: 0.5em;' src='/images/dip.png' width='300' height='150'></p>Detection of the source camera from a given image using noise, Fast Fourier Transformations, to train Deep Learning Models in an ensemble.</div>"
+excerpt: "<div><p><img style='object-fit:scale-down; max-height: 150px; display: block; float: left; padding-right: 0.5em; padding-bottom: 0.5em;' src='/images/dip.png' width='300' height='150'></p>An algorithm that identifies which camera was used to capture an image using traces of information left intrinsically in the image, using filters, followed by a deep neural network on these filters. Detection of the source camera from a given image using noise, Fast Fourier Transformations, and other parameters, to train Deep Learning Models in an ensemble.</div>"
 collection: portfolio
 ---
 <style>
@@ -126,24 +126,27 @@ collection: portfolio
 }
  
 </style>
-<div class="double-val-label"><span class="success">Artificial Intelligence</span></div>
+<div class="double-val-label"><span class="success">Computational Imaging</span></div>
 <div class="double-val-label"><span class="primary">Computer Vision</span></div>
-<div class="double-val-label"><span class="info">ML4Health</span></div>
-<div class="double-val-label"><span class="warning">Realtime Systems</span></div>
+<div class="double-val-label"><span class="info">Fourier Transforms</span></div>
+<div class="double-val-label"><span class="warning">Machine Learning</span></div>
 <br>
-Contender for the IEEE Signal Processing Cup 2018. Detection of the source camera from a given image using noise, Fast Fourier Transformations, and other parameters, to train Deep Learning Models in an ensemble.
+Contender for the IEEE Signal Processing Cup 2018. An algorithm that identifies which camera was used to capture an image using traces of information left intrinsically in the image, using filters, followed by a deep neural network on these filters. Detection of the source camera from a given image using noise, Fast Fourier Transformations, and other parameters, to train Deep Learning Models in an ensemble. 
+<br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<a style="text-decoration: none;" target="_blank" href="https://github.com/grassknoted/Digital-Image-Forensics"><button type="button" class="btn btn-info" style="background-color: #6cc644; font-size: 1em;" ><i class="fa-brands fa-github"></i> GitHub</button></a>
+<a style="text-decoration: none;" target="_blank" href="https://arxiv.org/abs/2210.09052"><button type="button" class="btn btn-primary" style="background-color: #bd1f36; font-size: 1em;" ><i class="fa-solid fa-file-pdf"></i> arXiv</button></a>
 <br>
 <br>
-<strong>Technologies Used:</strong> Computational Imaging, Signal Processing, Deep Learning, OpenCV.
-
-
+<strong>Technologies Used:</strong> Computational Imaging, Signal Processing, Deep Learning, Digital Signal Processing.
 <br>
 <br>
 <strong>My Role:</strong> 
 <ul>
-    <li>Designed the three-stream action recognition system.</li>
-    <li>Developed the frame buffer for real-time processing.</li>
-    <li>Neural Network pruning.</li>
+    <li>Implemented Gray Level Dependency Matrix to get image statistics per camera.</li>
+    <li>Dataset augmentation by introducing image manipulations.</li>
+    <li>Implemented the Gallagher and Chen Algorithm  and Discrete Fourier Transforms to detect periodicity of camera noise.</li>
+    <li>Experimented with ensemble learning to achieve the best accuracy.</li>
 </ul>
 <div style="text-align: center;"><h3>Project Gallery</h3></div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -151,20 +154,8 @@ Contender for the IEEE Signal Processing Cup 2018. Detection of the source camer
 <div class="slideshow-container" style="width: 600px; height: 400px;">
     <div class="slideshow-inner">
       <div class="mySlides fade">
-        <img  src='/images/whats-good.jpeg' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
-        <div class="text">Overview of the System</div>
-      </div>
-      <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
-        <div class="text">SAST</div>
-      </div>
-      <div class="mySlides fade">
-        <img  src='/images/shell.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
-        <div class="text">Shell</div>
-      </div>
-      <div class="mySlides fade">
-        <img  src='/images/sast.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
-        <div class="text">Pelican</div>
+        <img  src='/images/comp_image.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
+        <div class="text">Periodicity of noise patterns for difference Cameras</div>
       </div>
     </div>
     <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
@@ -244,9 +235,6 @@ myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
 </script>
 <div style='text-align: center;'>
     <span class="dot" onclick='currentSlide(1)'></span>
-    <span class="dot" onclick='currentSlide(2)'></span>
-    <span class="dot" onclick='currentSlide(3)'></span>
-    <span class="dot" onclick='currentSlide(4)'></span>
 </div>
 
 </div>
