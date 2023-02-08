@@ -41,6 +41,18 @@
 
 
 
+  <meta name="twitter:site" content="@akash__nagaraj">
+  <meta name="twitter:title" content="NGO Protal">
+  <meta name="twitter:description" content="This project aims at being a complete, end-to-end solution for the functioning, and management of the school, which in our case is the Non-Profit Organization Sri Vidya Nikethan School, Bangalore.">
+  <meta name="twitter:url" content="http://localhost:4000/assets/js/portfolio/ngo-portal.js">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+
 
 
   
@@ -573,6 +585,8 @@ myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
       <li><strong>Follow:</strong></li>
     
     
+      <li><a href="https://twitter.com/akash__nagaraj"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
     
     
       <li><a href="http://github.com/grassknoted"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
@@ -582,7 +596,7 @@ myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2023 Akash Nagaraj. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a></div>
+<div class="page__footer-copyright">&copy; 2023 Akash Nagaraj. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>. Last Updated: 2nd February 2023.</div>
 
       </footer>
     </div>

@@ -41,6 +41,18 @@
 
 
 
+  <meta name="twitter:site" content="@akash__nagaraj">
+  <meta name="twitter:title" content="r2ic: Rust to Intermediate Code">
+  <meta name="twitter:description" content="A simple front end compiler for converting basic constructs of the Rust programming language (if, if-else, for, while, loop) to a form of intermediate code (quadruples). It also supports generation of an abstract syntax tree (AST). The code generated has three kinds of optimizations - constant folding, constant propagation, and loop unrolling.">
+  <meta name="twitter:url" content="http://localhost:4000/assets/js/portfolio/r2ic.js">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+
 
 
   
@@ -568,6 +580,8 @@ myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
       <li><strong>Follow:</strong></li>
     
     
+      <li><a href="https://twitter.com/akash__nagaraj"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
     
     
       <li><a href="http://github.com/grassknoted"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
@@ -577,7 +591,7 @@ myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2023 Akash Nagaraj. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a></div>
+<div class="page__footer-copyright">&copy; 2023 Akash Nagaraj. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>. Last Updated: 2nd February 2023.</div>
 
       </footer>
     </div>
