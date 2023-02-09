@@ -6,7 +6,15 @@ author_profile: false
 redirect_from:
   - /resume
 ---
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N13ZXFY26T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-N13ZXFY26T');
+</script>
 <strong><u><mark style="background-color: yellow;">NOTE:</mark></u></strong> This is an  overview of my CV, <a href="http://grassknoted.github.io/files/Akash_Resume.pdf" target="_blank">here is the full CV as a PDF</a>.
 
 Education

@@ -21,7 +21,15 @@ authors: '<strong>Akash Nagaraj</strong>, Mukund Sood, Chetna Sureka, Gowri Srin
 paperurl: 'https://www.akashnagaraj.me/files/Real-time-Action-Recognition-for-Fine-Grained-Actions-and-The-Hand-Wash-Dataset.pdf'
 # citation: 'A. Nagaraj, M. Sood and G. Srinivasa, "Real-Time Automated Answer Scoring," 2018 IEEE 18th International Conference on Advanced Learning Technologies (ICALT), 2018, pp. 231-232, doi: 10.1109/ICALT.2018.00122.'
 ---
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N13ZXFY26T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-N13ZXFY26T');
+</script>
 <!-- Bootstrap 4.0 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
