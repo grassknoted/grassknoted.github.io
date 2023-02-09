@@ -1,7 +1,7 @@
 ---
 permalink: /
 # title: " Akash Nagaraj"
-excerpt: "About me"
+excerpt: "Akash Nagaraj's Personal Website"
 author_profile: true
 redirect_from: 
   - /about/
