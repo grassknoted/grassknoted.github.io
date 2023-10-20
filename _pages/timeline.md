@@ -23,17 +23,17 @@ Education
   * Major GPA: 9.51/10
   * <u>Relevant Courses:</u> Machine Learning, Advanced Machine Learning, Data Structures, Design & Analysis of Algorithms, Cloud Computing, Big Data, Operating Systems
 * Audited Courses at Brown University, 2022
-    * <u>Courses:</u> Statistical Inference, Conditional Probability and Statistics, Information Theory, Computational Methods for Brain, Mind, and Behavior
+    * <u>Courses:</u> Statistical Inference, Conditional Probability and Statistics, Deep Learning, Information Theory, Computational Methods for Brain, Mind, and Behavior
 
 Research experience
 ======
-* Research Scholar, <strong>Serre Lab, Brown University</strong>, <small>August 2021 - August 2023 (tentative)</small>
+* Research Scholar, <strong>Serre Lab, Brown University</strong>, <small>October 2021 - Present </small>
   * Advisor: <em>Dr. Thomas Serre</em>
   * Work on understanding neural computations supporting perception to develop effective artificial intelligence and computer vision algorithms.
 
 * Research Assistant, <strong>PES University</strong>, <small>August 2018 - May 2019</small>
   * Advisor: <em>Dr. Gowri Srinivasa</em>
-  * Real-time fine-grained action recognition framework for hand sanitization auditing, aimed at reducing Hospital Acquired Infections.
+  * Real-time fine-grained action recognition framework for hand sanitization auditing aimed at reducing Hospital Acquired Infections.
 
 * Research Intern, <strong>Center for Cloud Computing and Big Data, PES University</strong>, <small>August 2017 - August 2018</small>
   * Advisors: <em>Dr. Sanchika Gupta, Dr. Dinkar Sitaram, Dr. KV Subramaniam</em>
@@ -46,7 +46,7 @@ Research experience
   
 Industry experience
 ======
-* Senior Analyst, <strong>Goldman Sachs</strong>, <small>January 2020 - August 2021</small>
+* Senior Analyst, <strong>Goldman Sachs</strong>, <small>January 2020 - September 2021</small>
   * Algorithmic trading, high-touch, and low-touch flows.
   * Built the new Equities Trading platform.
   * Sole-ownership of the trade-enrichment module.
