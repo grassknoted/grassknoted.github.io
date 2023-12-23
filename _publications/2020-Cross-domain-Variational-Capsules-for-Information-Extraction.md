@@ -1,16 +1,16 @@
 ---
 title: "Cross-domain Variational Capsules for Information Extraction"
 collection: publications
-permalink: /publication/cross-domain-variational-capsules-for-information-extraction
-excerpt: '<em>Published at Springer ICICSE 2020</em>
+permalink: /files/Cross-domain-Variational-Capsules-for-Information-Extraction.pdf
+excerpt: '<em>Published at Springer ICICSE 2020</em> <strong>(Oral presentation)</strong>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <br>
 <br>
-<a style="text-decoration: none;" target="_blank" href="https://arxiv.org/abs/2210.09053"><button style="background-color: #bd1f36;" type="button" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i> arXiv</button></a>
+<a style="text-decoration: none;" target="_blank" href="https://arxiv.org/abs/2210.09053"><button  onclick="event.stopPropagation();" style="background-color: #bd1f36;" type="button" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i> arXiv</button></a>
 
-<a style="text-decoration: none;" target="_blank" href="https://github.com/grassknoted/CDAE4InfoExtraction"><button style="background-color: #6cc644;" type="button" class="btn btn-info"><i class="fa-brands fa-github"></i> GitHub</button></a>
+<a style="text-decoration: none;" target="_blank" href="https://github.com/grassknoted/CDAE4InfoExtraction"><button  onclick="event.stopPropagation();" style="background-color: #6cc644;" type="button" class="btn btn-info"><i class="fa-brands fa-github"></i> GitHub</button></a>
 
-<a style="text-decoration: none;" target="_blank" href="https://www.kaggle.com/datasets/grassknoted/multidomain-image-characteristics-dataset"><button type="button" style="background-color: #4078c0;" class="btn btn-warning"><i class="fa-solid fa-database"></i> Data</button></a>'
+<a style="text-decoration: none;" target="_blank" href="https://www.kaggle.com/datasets/grassknoted/multidomain-image-characteristics-dataset"><button  onclick="event.stopPropagation();" type="button" style="background-color: #4078c0;" class="btn btn-warning"><i class="fa-solid fa-database"></i> Data</button></a>'
 date: 2022-09-11
 authors: '<strong>Akash Nagaraj</strong>, Akhil K, Akshay Venkatesh, Srikanth HR'
 paperurl: 'https://www.akashnagaraj.me/files/Cross-domain-Variational-Capsules-for-Information-Extraction.pdf'

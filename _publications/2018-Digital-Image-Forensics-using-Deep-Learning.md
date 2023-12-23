@@ -1,16 +1,16 @@
 ---
 title: "Digital Image Forensics using Deep Learning"
 collection: publications
-permalink: /publication/digital-image-forensics-using-deep-learning
-excerpt: '<em>Published in eForensics (May 2020)</em>
+permalink: /files/Digital-Image-Forensics-using-Deep-Learning.pdf
+excerpt: '<em>Preprint. Technical Report published in eForensics (May 2020)</em>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <br>
 <br>
-<a style="text-decoration: none;" target="_blank" href="https://arxiv.org/abs/2210.09052"><button style="background-color: #bd1f36;" type="button" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i> arXiv</button></a>
+<a style="text-decoration: none;" target="_blank" href="https://arxiv.org/abs/2210.09052"><button  onclick="event.stopPropagation();" style="background-color: #bd1f36;" type="button" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i> arXiv</button></a>
 
-<a style="text-decoration: none;" target="_blank" href="https://github.com/grassknoted/Digital-Image-Forensics"><button  style="background-color: #6cc644;" type="button" class="btn btn-info"><i class="fa-brands fa-github"></i> GitHub</button></a>
+<a style="text-decoration: none;" target="_blank" href="https://github.com/grassknoted/Digital-Image-Forensics"><button  onclick="event.stopPropagation();"  style="background-color: #6cc644;" type="button" class="btn btn-info"><i class="fa-brands fa-github"></i> GitHub</button></a>
 
-<a style="text-decoration: none;" target="_blank" href="https://www.kaggle.com/competitions/sp-society-camera-model-identification/data"><button type="button" style="background-color: #4078c0;" class="btn btn-warning"><i class="fa-solid fa-database"></i> Data</button></a>'
+<a style="text-decoration: none;" target="_blank" href="https://www.kaggle.com/competitions/sp-society-camera-model-identification/data"><button  onclick="event.stopPropagation();" type="button" style="background-color: #4078c0;" class="btn btn-warning"><i class="fa-solid fa-database"></i> Data</button></a>'
 date: 2018-10-10
 authors: '<strong>Akash Nagaraj</strong>, Mukund Sood, Vivek Kapoor, Yash Mathur, Bishesh Sinha'
 paperurl: 'https://www.akashnagaraj.me/files/Digital-Image-Forensics-using-Deep-Learning.pdf'

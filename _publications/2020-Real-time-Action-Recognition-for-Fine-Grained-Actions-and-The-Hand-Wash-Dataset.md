@@ -1,8 +1,8 @@
 ---
 title: "Real-time Action Recognition for Fine-Grained Actions and The Hand Wash Dataset"
 collection: publications
-permalink: /publication/real-time-action-recognition-for-fine-grained-actions-and-the-hand-wash-dataset
-excerpt: '<em>Patent Pending. arXiv:2210.07400</em>
+permalink: /files/Real-time-Action-Recognition-for-Fine-Grained-Actions-and-The-Hand-Wash-Dataset.pdf
+excerpt: '<em>Preprint. Patent Pending. arXiv:2210.07400</em>
 <!-- Boostrap 5.2.2 -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script> -->
 <!-- Boostrap 5.2.2 -->
@@ -11,11 +11,11 @@ excerpt: '<em>Patent Pending. arXiv:2210.07400</em>
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- Font Awesome -->
-<a style="text-decoration: none;" target="_blank" href="https://arxiv.org/abs/2210.07400"><button type="button" class="btn btn-primary" style="background-color: #bd1f36;" ><i class="fa-solid fa-file-pdf"></i> arXiv</button></a>
+<a style="text-decoration: none;" target="_blank" href="https://arxiv.org/abs/2210.07400"><button type="button" class="btn btn-primary"  onclick="event.stopPropagation();" style="background-color: #bd1f36;" ><i class="fa-solid fa-file-pdf"></i> arXiv</button></a>
 
-<a style="text-decoration: none;" target="_blank" href="https://github.com/grassknoted/Modified-Two-Stream-Fusion-for-Real-time-ActionRecognition"><button  style="background-color: #6cc644;" type="button" class="btn btn-info"><i class="fa-brands fa-github"></i> GitHub</button></a>
+<a style="text-decoration: none;" target="_blank" href="https://github.com/grassknoted/Modified-Two-Stream-Fusion-for-Real-time-ActionRecognition"><button   onclick="event.stopPropagation();" style="background-color: #6cc644;" type="button" class="btn btn-info"><i class="fa-brands fa-github"></i> GitHub</button></a>
 
-<a style="text-decoration: none;" target="_blank" href="https://www.kaggle.com/datasets/realtimear/hand-wash-dataset/data"><button type="button" class="btn btn-warning" style="background-color: #4078c0;" ><i class="fa-solid fa-database"></i> Data</button></a>'
+<a style="text-decoration: none;" target="_blank" href="https://www.kaggle.com/datasets/realtimear/hand-wash-dataset/data"><button  onclick="event.stopPropagation();" type="button" class="btn btn-warning" style="background-color: #4078c0;" ><i class="fa-solid fa-database"></i> Data</button></a>'
 date: 2022-09-10
 authors: '<strong>Akash Nagaraj</strong>, Mukund Sood, Chetna Sureka, Gowri Srinivasa'
 paperurl: 'https://www.akashnagaraj.me/files/Real-time-Action-Recognition-for-Fine-Grained-Actions-and-The-Hand-Wash-Dataset.pdf'

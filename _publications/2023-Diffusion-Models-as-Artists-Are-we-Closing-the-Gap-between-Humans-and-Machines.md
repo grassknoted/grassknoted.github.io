@@ -1,18 +1,18 @@
 ---
 title: "Diffusion Models as Artists: Are we Closing the Gap between Humans and Machines?"
 collection: publications
-permalink: /publication/diffusion-models-as-artists
-excerpt: '<em>Published at ICML 2023</em>
+permalink: /files/Diffusion-Models-as-Artists.pdf
+excerpt: '<em>Published at ICML 2023</em> <strong>(Oral presentation, top 2.3% of papers)
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <br>
 <br>
-<a style="text-decoration: none;" target="_blank" href="https://arxiv.org/abs/2301.11722" ><button style="background-color: #bd1f36;" type="button" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i> arXiv</button></a>
+<a style="text-decoration: none;" target="_blank" href="https://arxiv.org/abs/2301.11722" ><button onclick="event.stopPropagation();" style="background-color: #bd1f36;" type="button" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i> arXiv</button></a>
 
-<a style="text-decoration: none;" target="_blank" href="https://github.com/serre-lab/click_draw"><button  style="background-color: #6cc644;" type="button" class="btn btn-info"><i class="fa-brands fa-github"></i> GitHub</button></a>
+<a style="text-decoration: none;" target="_blank" href="https://github.com/serre-lab/click_draw"><button   onclick="event.stopPropagation();" style="background-color: #6cc644;" type="button" class="btn btn-info"><i class="fa-brands fa-github"></i> GitHub</button></a>
 
-<a style="text-decoration: none;" target="_blank" href="https://www.kaggle.com/competitions/asap-sas/data"><button style="background-color: #4078c0;" type="button" class="btn btn-warning"><i class="fa-solid fa-database"></i> Data</button></a>'
+<a style="text-decoration: none;" target="_blank" href="https://www.kaggle.com/competitions/asap-sas/data"><button  onclick="event.stopPropagation();" style="background-color: #4078c0;" type="button" class="btn btn-warning"><i class="fa-solid fa-database"></i> Data</button></a>'
 date: 2023-01-26
-authors: 'Victor Boutin, Thomas Fel, Lakshya Singhal, Rishav Mukherji, <strong>Akash Nagaraj</strong>, Julien Colin, Thomas Serre'
+authors: 'Victor Boutin, Thomas Fel, Lakshya Singhal, <strong>Akash Nagaraj</strong>, Julien Colin, Thomas Serre'
 paperurl: 'https://www.akashnagaraj.me/files/Diffusion-Models-as-Artists.pdf'
 # citation: 'A. Nagaraj, M. Sood and G. Srinivasa, "Real-Time Automated Answer Scoring," 2018 IEEE 18th International Conference on Advanced Learning Technologies (ICALT), 2018, pp. 231-232, doi: 10.1109/ICALT.2018.00122.'
 ---

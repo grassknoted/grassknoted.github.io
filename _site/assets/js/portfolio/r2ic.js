@@ -163,7 +163,7 @@
             <li class="masthead__menu-item"><a href="http://localhost:4000/">About</a></li>
           
             
-            <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">Publications</a></li>
+            <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">Publications & Presentations</a></li>
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/portfolio/">Portfolio</a></li>
@@ -591,7 +591,7 @@ myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2023 Akash Nagaraj. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>. Last Updated: 2nd February 2023.</div>
+<div class="page__footer-copyright">&copy; 2023 Akash Nagaraj. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>. Last Updated: 15<sup>th</sup> December 2023.</div>
 
       </footer>
     </div>

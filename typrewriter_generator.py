@@ -34,7 +34,7 @@ Example:
 '''
 
 # SET THE FOLLOWING 3 VALUES
-texts=[" Cognitive AI Researcher", " Software Developer", "n Educator"]
+texts=[" AI Researcher", " Software Developer", "n Educator"]
 # All times are in percentage intervals
 text_show_time = 8
 empty_text_time = 2

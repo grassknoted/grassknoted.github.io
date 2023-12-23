@@ -13,7 +13,11 @@
 {% endif %}
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 <div class="{{ include.type | default: "list" }}__item">  
+  {% if post.collection == 'portfolio' %}
   <article onclick="location.href='{{ base_path }}{{ post.url }}';" class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  {% else %}
+  <article onclick="location.href='{{ base_path }}{{ post.url }}';" class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    {% endif %}
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -39,7 +43,7 @@
               text-decoration: None !important;
             }
           </style>
-          <a style="text-decoration: none;" onMouseOver="this.style.textDecoration=none">{{ title }}</a>
+          {{ title }}
         {% else %}
           <a style="text-decoration: none;" href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
         {% endif %}
@@ -53,7 +57,7 @@
         {% if post.collection == 'teaching' %}
           <p><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
-          <p>Authors: <i>{{ post.authors }}</i></p>
+          <p><i>{{ post.authors }}</i></p> <!--Authors-->
           {% if post.type == 'published' %}
             <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
           {% elsif post.type == 'accepted' %}
