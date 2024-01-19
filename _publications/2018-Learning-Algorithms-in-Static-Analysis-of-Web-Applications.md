@@ -13,7 +13,7 @@ excerpt: '<em>Preprint. Accepted for presentation at Springer ICMISC 2020</em>
 <a style="text-decoration: none;" target="_blank" href="https://owasp.org/www-project-benchmark/"><button onclick="event.stopPropagation();"  style="background-color: #4078c0;" type="button" class="btn btn-warning"><i class="fa-solid fa-database"></i> Data</button></a>'
 date: 2022-09-08
 authors: '<strong>Akash Nagaraj</strong>, Bishesh Sinha, Mukund Sood, Yash Mathur, Sanchika Gupta, Dinkar Sitaram'
-paperurl: 'https://www.akashnagaraj.me/files/Learning-Algorithms-in-Static-Analysis-of-Web-Applications.pdf'
+paperurl: 'https://grassknoted.github.io/files/Learning-Algorithms-in-Static-Analysis-of-Web-Applications.pdf'
 # citation: 'A. Nagaraj, M. Sood and G. Srinivasa, "Real-Time Automated Answer Scoring," 2018 IEEE 18th International Conference on Advanced Learning Technologies (ICALT), 2018, pp. 231-232, doi: 10.1109/ICALT.2018.00122.'
 ---
 <!-- Google tag (gtag.js) -->

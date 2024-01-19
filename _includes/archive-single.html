@@ -16,7 +16,7 @@
   {% if post.collection == 'portfolio' %}
   <article onclick="location.href='{{ base_path }}{{ post.url }}';" class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
   {% else %}
-  <article onclick="location.href='{{ base_path }}{{ post.url }}';" class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% endif %}
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
@@ -45,7 +45,7 @@
           </style>
           {{ title }}
         {% else %}
-          <a style="text-decoration: none;" href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+          <a style="text-decoration: none;" target="_blank" href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
         {% endif %}
       {% endif %}
     </h2>

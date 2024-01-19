@@ -1,0 +1,210 @@
+---
+title: "Closed-loop optogenetic system for deep behavioral phenotyping" 
+excerpt: "<div><p><img style='object-fit:scale-down; display: block; float: left; padding-right: 0.5em; padding-bottom: 0.5em; max-height: 150px;' src='/images/closer_arch.png' width='300' height='150'></p>Closed-Loop Optogenetic System for Evoked Responses for automated sensory stimulation integrated with comprehensive behavioral analyses incorporating: i) real-time markerless pose tracking that guides precise laser stimulation of freely moving mice, enabling fully automated, standardized activation of genetically tagged neuronal subtypes innervating the skin; and ii) a computer vision pipeline for automated behavior classification. </div>"
+collection: portfolio
+---
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N13ZXFY26T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N13ZXFY26T');
+</script>
+<style>
+    .double-val-label {
+	 /* display: table; */
+	 font-family: 'Roboto', sans-serif;
+	 margin: 0.4em auto;
+     display: inline-block;
+     
+}
+ .double-val-label>span {
+	 background-color: #656565;
+	 color: #ffffff;
+	 display: table-cell;
+	 font-size: 0.9em;
+	 font-weight: 400;
+	 line-height: 1;
+	 padding: .3em .6em;
+	 text-align: center;
+	 vertical-align: baseline;
+	 white-space: nowrap;
+}
+ .double-val-label>span:first-child {
+	 border-radius: 0.25em;
+}
+ .double-val-label>span:nth-child(2) {
+	 border-radius: .25em;
+}
+ .double-val-label>span.primary {
+	 background-color: #337ab7;
+}
+ .double-val-label>span.success {
+	 background-color: #5cb85c;
+}
+ .double-val-label>span.info {
+	 background-color: #5bc0de;
+}
+ .double-val-label>span.warning {
+	 background-color: #f0ad4e;
+}
+ .double-val-label>span.danger {
+	 background-color: #d9534f;
+
+ }
+ .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto
+}
+
+.mySlides {
+    display: none;
+  height: 400px;
+  border: solid 1px black;
+     
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #222428;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
+}
+
+.next {
+    right: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev {
+    left: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev:hover,
+.next:hover {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding-top: 12px;
+  padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #222428
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+.active,
+.dot:hover {
+    background-color: #717171
+}
+ 
+</style>
+<div class="double-val-label"><span class="success">Artificial Intelligence</span></div>
+<div class="double-val-label"><span class="primary">Computer Vision</span></div>
+<div class="double-val-label"><span class="info">Vision Science</span></div>
+<div class="double-val-label"><span class="warning">Behavioral Analysis</span></div>
+<br>
+
+CLOSER provides an accessible, reproducible, fully automated platform for closed-loop optogenetic behavior experiments coupled with content-rich behavioral analysis. By standardizing stimulus delivery and utilizing unbiased machine vision for behavior classification, CLOSER enhances reproducibility while reducing experimenter labor and subjective biases in interpreting stimulus-evoked responses. The system's closed-loop design can be applied to study any limb or body region of interest in various model organisms. Automatic and comprehensive behavioral phenotyping using CLOSER could be scaled for high throughput screening of novel therapeutics optimized to mitigate spontaneous and stimuli-evoked maladaptive forms of pain. The integration of real-time optogenetic control with computer vision behavior tracking is a powerful and versatile tool for dissecting neural circuits underlying complex behaviors. Additionally, CLOSER will be open-source, with algorithms and a collection of pretrained models to facilitate its use in new experimental configurations without the need for additional annotation.
+
+<br>
+<br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<br>
+<br>
+<strong>Technologies Used:</strong> OpenCV, PyTorch, Transformers, VideoProcessing.
+<br>
+<br>
+<strong>My Role:</strong> 
+<ul>
+    <li>Trained the complete behavior classification tool from scratch using self-supervised pre-training.</li>
+    <li>Modified the existing VGG Image Annotator for collaborators to annotate videos.</li>
+    <li>Explainability (gradient analysis) to explain confounds, background subtraction, and segmentation on the videos: Transformers and Optical Flow.</li>
+    <li>Annotated over 20,000 frames overall for DeepLabCut and bootstrapped DeepLabCuts Models for individual animals.</li>
+    <li>Built a tracker for the animals, using signal processing (Kalman filter and Savitzky-Golay filters) for tracking, and eliminating Jitter. Fine-tuned YOLOv5 and SSD for object detection</li>
+</ul>
+
+<div style="text-align: center;"><h3>Project Poster</h3></div>
+<embed src="https://drive.google.com/file/d/1l_IzasgOZYNMmn0yhTx7PetjZ0hfbArr/view?usp=sharing" type="application/pdf" width="100%" height="600px" />
+
+<!-- <div style="text-align: center;"><h3>Project Gallery</h3></div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<div class="slideshow-container" style="width: 600px; height: 400px;">
+    <div class="slideshow-inner">
+      <div class="mySlides fade">
+        <img  src='/images/data_overview.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="sally lightfoot crab"/>
+        <div class="text">Data Overview</div>
+      </div>
+      <div class="mySlides fade">
+        <img  src='/images/9classes.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="fighting nazca boobies"/>
+        <div class="text">Animal Actions Disambiguated</div>
+      </div>
+      <div class="mySlides fade">
+        <img  src='/images/poseVAE.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
+        <div class="text">Variational Autoencoder for Pose</div>
+      </div>
+      <div class="mySlides fade">
+        <img  src='/images/actions0.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="otovalo waterfall"/>
+        <div class="text">Distinguishing Experimental Phases</div>
+      </div>
+      <div class="mySlides fade">
+        <img  src='/images/circadian.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
+        <div class="text">Circadian Rhythm of Mice from I3D Action Recognition</div>
+      </div>
+      <div class="mySlides fade">
+        <img  src='/images/actions1.png' style='width: 100%; max-width: 600px; max-height: 400px;' alt="pelican"/>
+        <div class="text">Distinguishing Fine-grained Spine Positions</div>
+      </div>
+    </div>
+    <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+    <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+</div>
+<br/>
+    
+<div style='text-align: center;'>
+    <span class="dot" onclick='currentSlide(1)'></span>
+    <span class="dot" onclick='currentSlide(2)'></span>
+    <span class="dot" onclick='currentSlide(3)'></span>
+    <span class="dot" onclick='currentSlide(4)'></span>
+    <span class="dot" onclick='currentSlide(5)'></span>
+    <span class="dot" onclick='currentSlide(6)'></span>
+</div> -->
+<script defer src="/assets/js/portfolio/11real-time-action-recognition.js"></script>

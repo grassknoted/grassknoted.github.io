@@ -1,13 +1,13 @@
 # Develop override settings
 
-url: http://grassknoted.github.io
+url: https://grassknoted.github.io
 
 analytics:
   provider: false
 
 comments:
   disqus:
-    shortname            : "mmistakes-dev"
+    shortname            : "grassknoted-dev"
 
 sass:
   style: expanded
