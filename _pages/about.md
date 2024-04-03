@@ -6491,15 +6491,15 @@ I'm a Research Scholar at the <a target="_blank" href="https://www.brown.edu/car
 
 <div>
 <ul style="align:justify;">
-  <li><strong>Data-driven models for generalizable representations:</strong><em> What training regimes and learning objectives allow us to learn desired features?</em></li>
-  <li><strong>Practical privacy:</strong><em> Can we build methods that drastically improve the privacy-utility tradeoff so as to afford privacy as a default for ML? How do these methods interact with other desirable properties of ML, such as efficiency and generalization?</em></li>
-  <li><strong>Deploying models in real-world environments:</strong><em> How do we tailor models to enhance their applicability in the real world, ensuring adaptability especially in healthcare?</em></li>
+  <li><strong>Data-driven models for generalizable representations:</strong><em> What training regimes and learning objectives allow us to learn desired perceptual features?</em></li>
+  <li><strong>Models grounded in human semantics:</strong><em> How do we design with decisions and objectives to learn from interactions with rich real-world data like humans?</em></li>
+  <li><strong>Deploying models in real-world environments:</strong><em> How do we tailor models to enhance their applicability in the real world, ensuring adaptability?</em></li>
 </ul>
 </div>
 
-Today, over 400 million people globally don't have access to a hospital within a 100km radius, reinforcing the need for affordable and accessible healthcare solutions using technology and AI. In this vein, I strongly believe in the concept of a decentralized, global AI to improve healthcare.
+I aim to build better AI systems by reverse-engineering human intelligence.
 
-I aspire to continue developing adaptable models that can be deployed in the real world with an emphasis on creating social impact, I'm particularly interested in the applications of AI systems in–healthcare and medicine.
+I aspire to continue developing adaptable models that can be deployed in the real world with an emphasis on creating social impact, I'm particularly interested in the applications of AI systems in–science, conservation, and medicine.
 
 <!-- <div align="center">
 <h3>Affiliations</h3>
