@@ -167,7 +167,7 @@ sitemap: false
             const cardEl = document.getElementById('card');
 
             // PLACEHOLDER: Replace this URL with your private Gist raw URL
-            const GIST_URL = 'https://gist.githubusercontent.com/grassknoted/0cba6ad46dbc0aaf0903c987b4ab9abe/raw/274196f4b3562dd19f61702cba64906563d1e4a0/gistfile1.txt';
+            const GIST_URL = 'https://gist.githubusercontent.com/grassknoted/X0cba6ad46dbc0aaf0903c987b4ab9abe/raw/274196f4b3562dd19f61702cba64906563d1e4a0/gistfile1.txt';
 
             // Fetch and display secret message from private Gist
             fetch(GIST_URL)
@@ -183,7 +183,7 @@ sitemap: false
                 })
                 .catch(error => {
                     console.error('Failed to load secret message:', error);
-                    secretMessageEl.innerText = 'Something was here... but now it remains a secret.';
+                    secretMessageEl.innerText = '✨ Something was here... but now it remains a secret. ✨';
                     cardEl.classList.remove('loading');
                     cardEl.classList.add('error');
                 });
