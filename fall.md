@@ -66,7 +66,7 @@ sitemap: false
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.65);
             backdrop-filter: blur(10px);
             border-radius: 16px;
             padding: 40px;
