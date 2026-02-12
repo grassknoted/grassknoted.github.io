@@ -591,7 +591,7 @@ myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2025 Akash Nagaraj. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>. Last Updated: 15<sup>th</sup> December 2023.</div>
+<div class="page__footer-copyright">&copy; 2026 Akash Nagaraj. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>. Last Updated: 15<sup>th</sup> December 2023.</div>
 
       </footer>
     </div>
