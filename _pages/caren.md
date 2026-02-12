@@ -1,7 +1,8 @@
 ---
 permalink: /caren/
-title: "Carrie"
+title: "Caren"
 author_profile: false
+layout: null
 ---
 
 <!DOCTYPE html>
@@ -249,6 +250,31 @@ author_profile: false
     })();
 
     // Floating hearts
+    (function() {
+      var container = document.getElementById('hearts');
+      var symbols = ['♥', '❤', '♡'];
+
+      function createHeart() {
+        var heart = document.createElement('span');
+        heart.className = 'heart';
+        heart.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+        heart.style.color = 'hsl(' + (340 + Math.random() * 20) + ', 80%, ' + (50 + Math.random() * 20) + '%)';
+        heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
+        heart.style.animationDelay = (Math.random() * 2) + 's';
+        container.appendChild(heart);
+
+        setTimeout(function() {
+          heart.remove();
+        }, 12000);
+      }
+
+      for (var i = 0; i < 10; i++) {
+        setTimeout(createHeart, i * 300);
+      }
+      setInterval(createHeart, 800);
+    })();
 
     // Countdown
     function updateCountdown() {
